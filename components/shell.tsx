@@ -65,10 +65,6 @@ export function Header() {
           <Link href="/" aria-label={c.nav.home}>
             <Brand />
           </Link>
-          <span className="edition-badge">
-            <span className="status-dot" />
-            {c.edition}
-          </span>
         </div>
         {navigation()}
         <div className="header-actions">

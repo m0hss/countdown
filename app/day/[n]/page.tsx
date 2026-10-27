@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/metadata";
+import { launchConfig as c } from "@/launch.config";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getDay } from "@/lib/days";
@@ -29,4 +31,15 @@ export default async function Page({
       />
     </Reveal>
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ n: string }>;
+}) {
+  const { n } = await params;
+  if (!/^[1-5]$/.test(n)) notFound();
+  const { meta } = await getDay(Number(n));
+  return pageMetadata(`${meta.title} · ${c.name}`, meta.teaser, `/day/${n}`);
 }

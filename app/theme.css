@@ -10,6 +10,7 @@
   --surface-bright: #39393b;
   --border: #353437;
   --border-bright: #444934;
+  --control-border: #858b76;
   --fg: #e5e1e4;
   --muted: #c5c9ae;
   --subtle: #969a89;
@@ -37,7 +38,7 @@
   --muted-foreground: var(--muted);
   --accent-foreground: var(--on-accent);
   --destructive: var(--error);
-  --input: var(--border);
+  --input: var(--control-border);
   --ring: var(--accent);
   --radius: 0.5rem;
   --font-space-mono: "Space Mono", monospace;
@@ -384,18 +385,6 @@ h3 {
   flex-shrink: 0;
   width: 28px;
   height: 28px;
-}
-.edition-badge {
-  display: none;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-space-mono);
-  font-size: 9px;
-  color: var(--accent);
-  padding: 5px 8px;
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--transparent));
-  border-radius: 5px;
-  background: color-mix(in srgb, var(--accent) 7%, var(--transparent));
 }
 .desktop-nav {
   display: none;
@@ -1660,8 +1649,14 @@ h3 {
   margin: 8px 0 0;
   line-height: 1.2;
 }
+.referral-stats dd:has(span) {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .referral-stats span {
   font-size: 8px;
+  line-height: 1;
   color: var(--muted);
 }
 .referral-link {
@@ -3303,9 +3298,6 @@ th:nth-child(4) {
   }
 }
 @media (min-width: 1280px) {
-  .edition-badge {
-    display: inline-flex;
-  }
   .header-brand {
     gap: 14px;
   }
@@ -3818,4 +3810,49 @@ th:nth-child(4) {
   to {
     transform: perspective(1000px) rotateX(0);
   }
+}
+
+/* Keep the brand out of inline baseline layout. */
+.header-brand > a {
+  display: flex;
+  align-items: center;
+}
+.header-brand .brand {
+  display: flex;
+  align-items: center;
+}
+.orbital-mark {
+  display: block;
+}
+.countdown-skeleton {
+  width: 1.3em;
+  height: 1.15em;
+  position: relative;
+}
+.countdown-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0.15em 0.08em;
+  background: var(--surface-highest);
+  border-radius: 4px;
+}
+/* Control boundaries and selected states remain visible on elevated surfaces. */
+.button-outline,
+.button-outline:hover,
+.field input,
+.manual-copy textarea,
+.search-field {
+  border-color: var(--control-border);
+}
+.field input[aria-invalid="true"] {
+  border-color: var(--error);
+}
+.segmented button[aria-pressed="true"],
+.segmented button[aria-selected="true"],
+.segmented > a[aria-current] {
+  box-shadow: inset 0 -2px var(--accent);
+}
+/* Scrollable code samples otherwise clip their outer keyboard outline. */
+.code-sample pre:focus-visible {
+  outline-offset: -2px;
 }

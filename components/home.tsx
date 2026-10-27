@@ -102,9 +102,8 @@ export function Home({ days }: { days: Day[] }) {
               </span>
             </div>
             <div>
-              <strong>
-                {registrations.length + (ticket ? 1 : 0)}{" "}
-                {c.rankings.registrations.toLowerCase()}
+              <strong role="status" aria-live="polite" aria-atomic="true">
+                {registrations.length + (ticket ? 1 : 0)} {c.hero.registered}
               </strong>
               <p>{c.hero.social}</p>
             </div>

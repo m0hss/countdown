@@ -60,9 +60,12 @@ test("timeline filters, effective calendars, RSVP and optional destinations", as
   await expect(
     page.getByRole("button", { name: c.community.attending, exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
+  await expect(
+    page.locator(".hero").getByRole("link", { name: c.actions.github }),
+  ).toHaveAttribute("href", c.destinations.github!);
   await page
-    .locator(".hero")
-    .getByRole("button", { name: c.actions.github })
+    .locator(".footer-links")
+    .getByRole("button", { name: c.actions.docs })
     .click();
   await expect(page.getByRole("dialog")).toContainText(c.actions.configure);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);

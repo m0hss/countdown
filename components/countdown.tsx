@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useDemo } from "./demo-provider";
 import { remaining } from "@/lib/demo";
 import { launchConfig as c } from "@/launch.config";
 function Digit({ value }: { value: string }) {
@@ -21,6 +22,7 @@ function Digit({ value }: { value: string }) {
   );
 }
 export function Countdown({ target, now }: { target: number; now: number }) {
+  const { ready } = useDemo();
   const values = remaining(target, now).map((value) =>
     String(value).padStart(2, "0"),
   );
@@ -28,15 +30,23 @@ export function Countdown({ target, now }: { target: number; now: number }) {
     <div
       className="countdown"
       role="timer"
-      aria-label={`${c.accessibility.countdown}: ${values.map((value, i) => `${value} ${c.units[i].toLowerCase()}`).join(", ")}`}
+      aria-busy={!ready}
+      aria-live="off"
+      aria-label={
+        ready
+          ? `${c.accessibility.countdown}: ${values.map((value, i) => `${value} ${c.units[i].toLowerCase()}`).join(", ")}`
+          : c.common.loading
+      }
     >
       <div className="countdown-inner" aria-hidden>
         {values.map((value, index) => (
           <div className="countdown-group" key={c.units[index]}>
             <div className="countdown-value">
-              {[...value].map((digit, i) => (
-                <Digit key={i} value={digit} />
-              ))}
+              {ready ? (
+                [...value].map((digit, i) => <Digit key={i} value={digit} />)
+              ) : (
+                <span className="countdown-skeleton" />
+              )}
             </div>
             <span className="countdown-label">{c.units[index]}</span>
           </div>

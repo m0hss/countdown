@@ -231,3 +231,22 @@ test("calendar uses effective timestamps and escapes and folds Unicode content",
   );
   assert.ok(eventCalendar(start).includes("DTEND:20261101T120000Z"));
 });
+
+test("ticket name truncation counts graphemes and leaves public data intact", async () => {
+  const { truncateName } = await import("../lib/names");
+  const limit = c.metadata.ticketNameLimit;
+  assert.equal(truncateName("A".repeat(limit)), "A".repeat(limit));
+  assert.equal(truncateName("A".repeat(limit + 1)), `${"A".repeat(limit)}…`);
+  const combined = "e\u0301";
+  assert.equal(
+    truncateName(combined.repeat(limit + 1)),
+    `${combined.repeat(limit)}…`,
+  );
+  const family = "👩‍👩‍👧‍👦";
+  assert.equal(
+    truncateName(`${"A".repeat(limit - 1)}${family}B`),
+    `${"A".repeat(limit - 1)}${family}…`,
+  );
+  const long = { ...ticket, name: "Alexandria Fictional Example" };
+  assert.equal(decodeTicket(encodeTicket(long), long.id)?.name, long.name);
+});

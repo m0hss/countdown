@@ -26,6 +26,7 @@ import {
   ticketPath,
   rankRegistrations,
 } from "@/lib/demo";
+import { truncateName } from "@/lib/names";
 import { registrations } from "@/lib/fixtures";
 import { downloadBlob } from "@/lib/calendar";
 import type { Registration, TicketPayload } from "@/lib/types";
@@ -103,7 +104,9 @@ export function TicketCard({
         <div className="ticket-person">
           <Avatar {...person} fixture={exportMode || person.fixture} />
           <div>
-            <h2>{person.name}</h2>
+            <h2 aria-label={person.name} title={person.name}>
+              {truncateName(person.name)}
+            </h2>
             <p className="mono">
               {person.username ? `@${person.username}` : c.ticket.noHandle}
             </p>

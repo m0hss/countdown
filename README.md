@@ -75,6 +75,14 @@ Configure optional GitHub, documentation, and community URLs in `launch.config.t
 
 **These are readiness flags, not service integrations.** Supplying credentials does not enable persistence, rate limits, or AI. The dismissible fixture-mode banner stays honest about that. A production service adapter, shared registration/referral storage, and server-side validation would be separate work. No admin password is required. No services are automatically provisioned.
 
+## Social previews and registration count
+
+Every page has its own title, description, Open Graph metadata, and Twitter summary card. Home and seeded tickets render local 1200×630 images with bundled fonts and theme colors. Seeded tickets support standard and gold previews. Browser-created tickets keep their portable fragment URLs; social crawlers cannot read fragments, so those links receive a generic ticket image. No backend is required.
+
+Set `siteUrl` in `launch.config.ts` to your public HTTPS origin before deployment to enable canonical URLs. When it is unset, image URLs use the request origin and canonical URLs are omitted, keeping local development functional with zero environment variables.
+
+Ticket and export names display the first 24 Unicode graphemes followed by an ellipsis when needed. Full names remain in ticket data and accessible labels. The registration counter is demo-local: 20 fixtures plus your browser's claimed ticket, updated on claim and reset. It is not a global live metric. Countdown digits appear only after browser state is restored; a dimensionally matched skeleton is rendered first.
+
 ## Deploy
 
 Fork the repository and import the fork into Vercel (or another host with Next.js 16 support). Use the Next.js preset, `pnpm install --frozen-lockfile`, and `pnpm build`. Leave environment variables empty. Deploy as a Next.js application, not a static export: the routes render through the server. Vercel account access is needed only to deploy, not for local development.

@@ -18,13 +18,22 @@ export const launchConfig = {
   },
   edition: "LAUNCH WEEK 01",
   destinations: {
-    github: null as string | null,
+    github: "https://github.com/m0hss/countdown" as string | null,
     community: null as string | null,
     docs: null as string | null,
   },
   shareText:
     "I'm in for Countdown Launch Week. Five days. Five new possibilities. Get your ticket.",
+  siteUrl: null as string | null,
   metadata: {
+    leaderboardTitle: "Community leaderboard",
+    leaderboardDescription:
+      "Meet the fictional builders sharing launch week. Explore demo rankings and referral milestones.",
+    ticketTitle: "Your launch week ticket",
+    ticketDescription:
+      "An invitation to five days of new possibilities. Explore your launch week access pass.",
+    genericName: "Your name here",
+    ticketNameLimit: 24,
     title: "Countdown — Launch Week",
     description:
       "Five days. Five drops. A new chapter for the way we build. Get your free Countdown Launch Week ticket.",
@@ -47,7 +56,8 @@ export const launchConfig = {
     complete: "ALL FIVE DROPS ARE LIVE",
     claim: "Claim your ticket",
     free: "Free to join. Yours to keep.",
-    social: "builders exploring the next frontier",
+    social: "Demo-local count · fixtures plus your ticket",
+    registered: "people registered",
     note: "BUILT IN THE OPEN. SHARED WITH EVERYONE.",
     preview: "EVERGREEN PREVIEW",
   },
