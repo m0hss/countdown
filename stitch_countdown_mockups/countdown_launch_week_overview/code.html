@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tech-matrix-grid{background-image:radial-gradient(rgba(244,244,245,0.06) 1px,transparent 1px);background-size:24px 24px;}.noise-overlay{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","secondary-fixed-dim":"#3cddc7","error":"#ffb4ab","outline":"#8f937a","on-error-container":"#ffdad6","surface-container-lowest":"#0e0e10","surface-container-highest":"#353437","surface-container":"#201f22","on-surface":"#e5e1e4","on-primary-fixed-variant":"#3d4d00","surface-dim":"#131315","secondary":"#44e2cd","on-secondary-fixed":"#00201c","outline-variant":"#444934","on-tertiary-fixed-variant":"#6900b3","primary-fixed-dim":"#aed500","on-secondary-container":"#004d44","surface-variant":"#353437","secondary-fixed":"#62fae3","on-background":"#e5e1e4","surface-bright":"#39393b","on-tertiary-container":"#8a33d9","tertiary-fixed":"#f0dbff","on-tertiary":"#490080","surface-tint":"#aed500","surface-container-low":"#1c1b1d","surface-container-high":"#2a2a2c","inverse-on-surface":"#313032","tertiary-container":"#f0dbff","on-primary-container":"#576c00","primary-container":"#c8f32c","on-tertiary-fixed":"#2c0051","on-surface-variant":"#c5c9ae","tertiary-fixed-dim":"#ddb7ff","on-error":"#690005","on-primary":"#293500","inverse-surface":"#e5e1e4","inverse-primary":"#526600","on-secondary":"#003731","primary-fixed":"#c8f32c","surface":"#131315","secondary-container":"#03c6b2","error-container":"#93000a","on-secondary-fixed-variant":"#005047","primary":"#ffffff","on-primary-fixed":"#171e00","background":"#131315"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"timer-display-mobile":["Space Mono"],"metric-mono":["Space Mono"],"headline-md":["Geist"],"headline-lg":["Geist"],"timer-display":["Space Mono"],"display-hero":["Geist"],"headline-lg-mobile":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"],"badge-code":["Space Mono"],"display-hero-mobile":["Geist"],"body-base":["Geist"],"headline-sm":["Geist"]},fontSize:{"timer-display-mobile":["36px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}],"metric-mono":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"timer-display":["64px",{"lineHeight":"68px","letterSpacing":"-0.05em","fontWeight":"700"}],"display-hero":["72px",{"lineHeight":"76px","letterSpacing":"-0.04em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"badge-code":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-base":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface tech-matrix-grid min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-50 noise-overlay"></div><header class="fixed top-0 left-0 w-full z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Countdown Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoVlPbXc_lo6XR747aPX28ZQzb0EfDBBNdaTzGB8Yn1J45qWCKJenwbbOLfUBdFI0ervQt3xZd-0LCAPEC1_8uWgj6bYOs6m8B1NUeonu_ar4Wt2LRnESRYGxOcdybrbNwh0Ug6LBBI6rHnT_PC1DvI0sv5dtKjnCkalJRol7StkZUBUFdBCAQX7sIJDLtx0XA3KvgRakJSiBRyHGROlGfpf02ioatPrnTpYL2X30n"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">COUNTDOWN</span><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container/10 border border-primary-container/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-badge-code text-badge-code font-bold uppercase text-primary-fixed-dim">LAUNCH WEEK 01</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low/70 rounded-lg" data-active-classes="bg-surface-container-high text-on-surface rounded-lg"><a aria-current="page" class="px-space-md py-1.5 font-body-base transition-colors bg-surface-container-high text-on-surface rounded-lg" data-path="overview-timeline" href="#">Timeline</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="launch-ticket" href="#">Ticket</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="day-reveal" href="#">Day 03</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="leaderboard" href="#">Leaderboard</a></nav><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-low border border-surface-container-highest"><span class="font-metric-mono text-metric-mono text-on-surface-variant">STARTS IN</span><span class="font-metric-mono text-metric-mono text-primary-fixed-dim tracking-wider font-bold">02D 14H 32M</span></div><a class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-metric-mono text-metric-mono transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-bold">4.2k</span></a><button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-semibold shadow-[0_0_12px_rgba(200,243,44,0.2)] transition-all active:scale-95">Claim Ticket</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Top ambient glow behind hero -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary-container/10 rounded-full blur-[130px] pointer-events-none"></div>
+<div class="absolute top-48 left-1/4 w-[360px] h-[240px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- SECTION 1: HERO -->
+<section class="relative max-w-7xl mx-auto px-margin pt-space-lg pb-space-xl flex flex-col items-center text-center">
+<!-- Eyebrow Chip -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm mb-space-lg">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-badge-code text-badge-code uppercase tracking-wider text-primary-fixed-dim font-bold">LIVE LAUNCH EVENT</span>
+<span class="text-outline-variant font-badge-code text-badge-code">•</span>
+<span class="font-badge-code text-badge-code tracking-wider text-on-surface-variant uppercase">OCTOBER 21–25, 2025</span>
+<span class="hidden md:inline text-outline-variant font-badge-code text-badge-code">•</span>
+<span class="hidden md:inline font-badge-code text-badge-code text-on-surface uppercase">NEXT.JS 16 & TAILWIND v4</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero tracking-tighter text-on-surface max-w-4xl mx-auto text-balance">
+        The Developer Platform,
+        <span class="bg-gradient-to-r from-on-surface via-primary-fixed-dim to-secondary bg-clip-text text-transparent">Reimagined.</span>
+</h1>
+<p class="mt-space-md max-w-2xl font-body-lg text-body-lg text-on-surface-variant text-balance">
+        Five days of production-grade architectural breakthroughs, zero-cold-start runtimes, and distributed state coordination delivered straight to your workflow.
+      </p>
+<!-- Giant Monospace Precision Countdown Block -->
+<div class="relative w-full max-w-5xl mt-space-xl mb-space-lg">
+<div class="absolute inset-0 bg-primary-container/10 blur-[80px] rounded-full pointer-events-none"></div>
+<div class="relative grid grid-cols-2 md:grid-cols-4 gap-gutter-sm md:gap-gutter p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-xl">
+<!-- Days -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<div class="relative w-full text-center overflow-hidden">
+<span class="font-timer-display text-timer-display tracking-tight text-on-surface tabular-nums" id="timer-days">02</span>
+<div class="w-full h-[1px] bg-surface-container-highest/60 my-1"></div>
+</div>
+<span class="font-badge-code text-badge-code uppercase tracking-widest text-on-surface-variant mt-1">Days</span>
+</div>
+<!-- Hours -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<div class="relative w-full text-center overflow-hidden">
+<span class="font-timer-display text-timer-display tracking-tight text-primary-fixed-dim tabular-nums" id="timer-hours">14</span>
+<div class="w-full h-[1px] bg-surface-container-highest/60 my-1"></div>
+</div>
+<span class="font-badge-code text-badge-code uppercase tracking-widest text-on-surface-variant mt-1">Hours</span>
+</div>
+<!-- Mins -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<div class="relative w-full text-center overflow-hidden">
+<span class="font-timer-display text-timer-display tracking-tight text-on-surface tabular-nums" id="timer-mins">38</span>
+<div class="w-full h-[1px] bg-surface-container-highest/60 my-1"></div>
+</div>
+<span class="font-badge-code text-badge-code uppercase tracking-widest text-on-surface-variant mt-1">Minutes</span>
+</div>
+<!-- Secs -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low shadow-sm">
+<div class="relative w-full text-center overflow-hidden">
+<span class="font-timer-display text-timer-display tracking-tight text-secondary tabular-nums" id="timer-secs">42</span>
+<div class="w-full h-[1px] bg-surface-container-highest/60 my-1"></div>
+</div>
+<span class="font-badge-code text-badge-code uppercase tracking-widest text-on-surface-variant mt-1">Seconds</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between px-space-md text-on-surface-variant font-badge-code text-badge-code">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            GLOBAL SYNCHRONIZED CLOCK (PT TIMEZONE)
+          </span>
+<span class="hidden sm:inline font-metric-mono text-metric-mono">EPOCH 1729526400</span>
+</div>
+</div>
+<!-- Action Button Row -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-sm">
+<button class="px-space-xl py-3 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center gap-space-sm shadow-[0_0_24px_rgba(200,243,44,0.25)] transition-all hover:scale-105 active:scale-95">
+<span>Claim your ticket</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="px-space-lg py-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-base text-body-base flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_add_on</span>
+<span>Add to Calendar (.ics)</span>
+</button>
+<a class="px-space-md py-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-metric-mono text-metric-mono flex items-center gap-space-xs transition-colors shadow-sm" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">star</span>
+<span class="text-on-surface-variant">Star on GitHub</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-bold text-[12px]">14.8k</span>
+</a>
+</div>
+<!-- Live Social Proof & Minted Ticker -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-lg pt-space-md">
+<!-- Attendees Stack -->
+<div class="flex items-center gap-space-sm">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Dev 1" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface object-cover" data-alt="A portrait of a software engineer wearing stylish technical streetwear glasses, bathed in subtle neon green studio light, sharp focus profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtQplIxb9kfUUXzLjBE4S_fYO8beC1h6VH7uwJQoEdwtmd6QTWASEGeHQ9esD7lyOrPsdmi0ilVCySr_RCt8ymHN0onSAs4v7BQbVpATHYqyJXhEd0ewdAZC7bOQ6l5CrUQ62bx_qAL5FLZgCivvfR9R1OphljUq4BWYEGvEwHeK49MaGDfDA-jj8cH7dZ90l08vsL4QMrAyhaQEL3BtmZFyQ2mfrIHXIK7O5Ft_U"/>
+<img alt="Dev 2" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface object-cover" data-alt="Close up portrait of a senior system architect smiling, nocturnal ambient lighting with deep indigo and cyan hues, high fidelity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS6bLgnvv5mYkma1agMmaZuNHoZplnlsFGMQ8P9dZia3xAB9Y-4IGWXgU3-uXCyS8lOQKZlWu8SWRpkJESXFItOjA5ux_zwBpd3hCZrLkArbg9eH3qvgzHi1l8UlU3slBpjAikc0XSwLBWO2M3XckRHMntlWVH5ziuS1rP1kEMVDigUYRJLxjkhFS3o78uH1KeNvK8myqpAwvhAs5w0Nh_0ITerc0l0gP2_KTlHsk"/>
+<img alt="Dev 3" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface object-cover" data-alt="DevOps engineer developer avatar, low light background with glowing monitor code reflections, sharp studio photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGA9SeopMzxWH7GU9zq1UwHRZcP-a7-2bEhtbtoeY-OT-FzCqmrRP7FgYlzKI1UqpiSoAP1YQvjKrI5scej0ijKTnLXkyECHbydNGdXCEVhQLlvAsadQN-Fl3WhZpf8qL3LYiTBx9AyocrRAbgfu_7_L57RFj-19Wisge53ZHniaU1r-0-a9KgYcxIapi5EFiUjFs_jQqaaKgnVhK-jgTweLHkb1H5TyRyY9GfMWE"/>
+<div class="inline-flex h-8 w-8 rounded-full ring-2 ring-surface bg-primary-container items-center justify-center text-on-primary-container font-badge-code text-badge-code font-bold">+24k</div>
+</div>
+<div class="text-left">
+<p class="font-body-base text-body-base font-semibold text-on-surface leading-none">24,819 developers</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">registered for early sandbox access</p>
+</div>
+</div>
+<div class="hidden sm:block h-6 w-[1px] bg-surface-container-highest"></div>
+<!-- Live Ticket Activity -->
+<div class="flex items-center gap-space-xs bg-surface-container-low/90 px-space-md py-1.5 rounded-lg shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-metric-mono text-metric-mono text-secondary-fixed-dim font-bold">#024820</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">just minted by</span>
+<span class="font-metric-mono text-metric-mono text-on-surface font-bold">@alex_dev</span>
+</div>
+</div>
+</section>
+</div>
+<!-- SECTION 2: 5-DAY LAUNCH TIMELINE -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<!-- Header with Schedule Filter -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs text-primary-fixed-dim font-badge-code text-badge-code font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>SCHEDULE OF DROPS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">5 DAYS OF SHIPMENT</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1">Every morning at 09:00 AM PT, a foundational layer drops into production.</p>
+</div>
+<!-- Schedule Filter Pill Toggle -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg shadow-sm">
+<button class="px-space-md py-1.5 rounded bg-surface-container-highest text-on-surface font-body-base text-body-base font-semibold transition-all" id="tab-all">All Days</button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-all" id="tab-unlocked">Live Only (3)</button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-all" id="tab-locked">Locked (2)</button>
+</div>
+</div>
+<!-- 5 Day Cards Bento Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- DAY 1: UNLOCKED / LIVE -->
+<div class="launch-card day-unlocked group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between shadow-md transition-all hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-mono text-metric-mono text-on-surface-variant font-bold">DAY 01 • MON</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-badge-code text-badge-code font-bold uppercase">REVEALED</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight group-hover:text-primary-fixed-dim transition-colors">
+            AI Edge Runtime
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Sub-millisecond model invocation running natively on V8 isolates with zero serverless cold starts.
+          </p>
+<!-- Changelog Snippet -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-lowest font-metric-mono text-[12px] text-on-surface-variant flex flex-col gap-1">
+<div class="flex items-center justify-between text-secondary">
+<span>+ engine/v8-turbo-v16</span>
+<span class="font-bold">< 0.4ms</span>
+</div>
+<div class="text-on-surface truncate">Full streaming text synthesis and tensor quantization</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1 font-body-base text-body-base text-primary-fixed-dim hover:underline font-semibold" href="#">
+            Read Release v1.0
+            <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<span class="font-badge-code text-badge-code text-on-surface-variant">OCT 21</span>
+</div>
+</div>
+<!-- DAY 2: UNLOCKED / LIVE -->
+<div class="launch-card day-unlocked group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between shadow-md transition-all hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-mono text-metric-mono text-on-surface-variant font-bold">DAY 02 • TUE</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-badge-code text-badge-code font-bold uppercase">BENCHMARKED</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight group-hover:text-secondary transition-colors">
+            Distributed Cache Engine
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Global cache invalidation in under 12ms with Raft consensus built in Rust.
+          </p>
+<!-- Performance Visual Sparkline -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-code text-badge-code text-on-surface-variant">THROUGHPUT GAIN</span>
+<span class="font-timer-display text-[20px] leading-tight text-secondary font-bold">+418%</span>
+</div>
+<!-- Mini SVG Sparkline -->
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 32">
+<path d="M0 28 L20 25 L40 18 L60 22 L80 8 L100 3" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 28 L20 25 L40 18 L60 22 L80 8 L100 3 L100 32 L0 32 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<a class="inline-flex items-center gap-1 font-body-base text-body-base text-secondary hover:underline font-semibold" href="#">
+            Inspect Architecture
+            <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<span class="font-badge-code text-badge-code text-on-surface-variant">OCT 22</span>
+</div>
+</div>
+<!-- DAY 3: TODAY'S DROP (HERO CARD) -->
+<div class="launch-card day-unlocked relative md:col-span-2 lg:col-span-1 rounded-xl bg-surface-container-high p-space-lg flex flex-col justify-between shadow-xl ring-1 ring-primary-container/40">
+<div class="absolute -top-3 left-6 px-3 py-0.5 rounded-full bg-primary-container text-on-primary-container font-badge-code text-badge-code font-bold uppercase tracking-widest shadow-md">
+          ★ TODAY'S DROP
+        </div>
+<div>
+<div class="flex items-center justify-between mt-1 mb-space-md">
+<span class="font-metric-mono text-metric-mono text-primary-fixed-dim font-bold">DAY 03 • WED (LIVE NOW)</span>
+<span class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-container/10 text-primary-fixed-dim font-badge-code text-badge-code font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+              ACTIVE
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">
+            Universal Data Mesh
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant mt-space-xs">
+            Query across Postgres, ClickHouse, and Vector indices with a unified zero-copy GraphQL API.
+          </p>
+<!-- Interactive Mock Code Drop preview -->
+<div class="mt-space-md rounded-lg overflow-hidden bg-surface-container-lowest">
+<div class="flex items-center justify-between px-space-sm py-1.5 bg-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error-container"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+</div>
+<span class="font-badge-code text-badge-code text-on-surface-variant">mesh.query.ts</span>
+</div>
+<pre class="p-space-sm font-metric-mono text-[11px] text-on-surface leading-relaxed overflow-x-auto"><code>const mesh = await countdown.mesh({
+  federate: ['pg/primary', 'vector/semantic'],
+  latencyBudget: '8ms'
+});</code></pre>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-bold shadow-md transition-all active:scale-95 flex items-center gap-1">
+<span>Explore Playground</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+<span class="font-badge-code text-badge-code text-primary-fixed-dim font-bold">09:00 AM PT</span>
+</div>
+</div>
+<!-- DAY 4: LOCKED -->
+<div class="launch-card day-locked group relative rounded-xl bg-surface-container-lowest/60 backdrop-blur-md p-space-lg flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-mono text-metric-mono text-outline font-bold">DAY 04 • THU</span>
+<div class="flex items-center gap-1 text-outline font-badge-code text-badge-code font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>LOCKED</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface-variant/70 tracking-tight">
+              Storage & State Replay
+            </h3>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant/60 mt-space-xs">
+            Deterministic time-travel branch snapshots for distributed database clusters.
+          </p>
+<!-- T-minus Countdown Strip -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-low/50 flex flex-col items-center justify-center text-center">
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase tracking-widest mb-1">Unlocks in</span>
+<span class="font-timer-display text-[26px] leading-tight text-on-surface tracking-wider font-bold">18:24:11</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between text-outline">
+<span class="font-body-sm text-body-sm italic flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">notifications</span>
+            Notify on Drop
+          </span>
+<span class="font-badge-code text-badge-code">OCT 24</span>
+</div>
+</div>
+<!-- DAY 5: LOCKED - GRAND FINALE -->
+<div class="launch-card day-locked md:col-span-2 lg:col-span-2 group relative rounded-xl bg-surface-container-lowest/60 backdrop-blur-md p-space-lg flex flex-col md:flex-row justify-between gap-space-lg shadow-sm">
+<div class="flex-1">
+<div class="flex items-center gap-space-md mb-space-md">
+<span class="font-metric-mono text-metric-mono text-outline font-bold">DAY 05 • FRI</span>
+<div class="flex items-center gap-1 text-primary-fixed-dim font-badge-code text-badge-code font-bold bg-primary-container/10 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>THE GRAND FINALE</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface-variant tracking-tight">
+            One More Thing... Autonomous Ops Core
+          </h3>
+<p class="font-body-base text-body-base text-on-surface-variant/70 mt-space-xs max-w-xl">
+            A radical departure from static configuration files. Synthesizing full cloud micro-topologies directly from raw Git commit logs.
+          </p>
+<div class="mt-space-md flex flex-wrap gap-space-sm font-badge-code text-badge-code text-on-surface-variant">
+<span class="px-2 py-1 rounded bg-surface-container-low">#SELF_HEALING</span>
+<span class="px-2 py-1 rounded bg-surface-container-low">#ZERO_CONFIG</span>
+<span class="px-2 py-1 rounded bg-surface-container-low">#SECRET_KEYNOTE</span>
+</div>
+</div>
+<div class="md:w-64 flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low/50 text-center shrink-0">
+<span class="material-symbols-outlined text-[32px] text-outline mb-1">lock_clock</span>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase tracking-widest mb-1">Unlocks in</span>
+<span class="font-timer-display text-[26px] leading-tight text-on-surface tracking-wider font-bold">42:24:11</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim mt-2">Fri 09:00 AM PT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: INTERACTIVE EVENT HIGHLIGHTS & LIVESTREAM SPEC -->
+<section class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Keynote Media Embed Showcase (7 cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-badge-code text-badge-code text-on-surface font-bold uppercase tracking-wider">OFFICIAL KEYNOTE STREAM</span>
+</div>
+<div class="flex items-center gap-1 font-metric-mono text-metric-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">visibility</span>
+<span>4,280 waiting</span>
+</div>
+</div>
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-container-low shadow-xl flex items-center justify-center group">
+<!-- Background image placeholder with rich data-alt -->
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A futuristic dark technology launch stage with volumetric neon lime laser gridlines, a vast LED backdrop displaying complex telemetry code, cinematic widescreen lighting, hyper-realistic production stage set." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDST9z8nZLC8AEfa9jUdBQDqbGZNAwKdA8NqAe79RArSbNGhxBFiwqlaUMnXgxJmIhJmgCeQTdssTRqzzRNPIaBDjnO1eUME_61CR-dWcSjNQQtwhEFLc295qYLnbOxANdmHwFV4jjf9h8BWkLgamJigGXddDIy74t-M_l17WtikYwA-AZNPb6dVZNV9FJCBzgDkooOexwMJqhC0SDVsjVm0HL2R8cd_-W0a0SGpNg')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-[2px] transition-colors group-hover:bg-surface-container-lowest/40"></div>
+<!-- Play Button Overlay -->
+<div class="relative flex flex-col items-center gap-space-sm text-center p-space-md">
+<button class="w-16 h-16 rounded-full bg-primary-container hover:bg-primary-fixed text-on-primary-container flex items-center justify-center shadow-lg transition-transform group-hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined text-[36px] ml-1">play_arrow</span>
+</button>
+<div class="mt-space-xs">
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">Watch Launch Week Keynote</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hosted by CTO Guillermo & Lead Systems Team</p>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded bg-surface-container-lowest/90 font-metric-mono text-badge-code text-on-surface-variant">
+            4K UHD • 60 FPS • DOLBY ATMOS
+          </div>
+</div>
+</div>
+<!-- Right: Specs / Live Workshops & Daily Spaces (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed-dim">forum</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Daily Community Spaces</h4>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant mb-space-md">
+            Join the core engineers every afternoon at 2 PM PT on Discord Stage and X Spaces for interactive AMAs, live code review, and feature deep dives.
+          </p>
+<!-- Timeline sub-items -->
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<p class="font-body-base text-body-base font-semibold text-on-surface">Wasm & Edge Runtime AMA</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Today @ 2:00 PM PT • Discord Stage</p>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-badge-code text-badge-code font-bold">RSVP</button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<p class="font-body-base text-body-base font-semibold text-on-surface">Federated Query Workshop</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tomorrow @ 11:00 AM PT • YouTube Live</p>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-badge-code text-badge-code font-bold">RSVP</button>
+</div>
+</div>
+</div>
+<!-- Metric Tile Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">BENCHMARK HIGHLIGHT</span>
+<h5 class="font-headline-sm text-headline-sm font-bold text-on-surface">Zero-Cold Starts</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated across 34 globally distributed edge points.</p>
+</div>
+<div class="text-right">
+<span class="font-timer-display text-[38px] leading-tight text-primary-fixed-dim font-bold">0.18</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant block">ms avg</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FAQ ACCORDION -->
+<section class="max-w-4xl mx-auto px-margin py-space-xl w-full">
+<div class="text-center mb-space-xl">
+<span class="font-badge-code text-badge-code text-primary-fixed-dim font-bold uppercase tracking-wider">FREQUENTLY ASKED QUESTIONS</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mt-space-xs">Everything you need to know</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-1">Details about ticket minting, product availability, and release cadence.</p>
+</div>
+<!-- Accordion Items Container -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="faq-item rounded-xl bg-surface-container-low shadow-sm transition-all overflow-hidden">
+<button class="faq-btn w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm font-semibold text-on-surface">
+<span>What is Countdown Launch Week?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg font-body-base text-body-base text-on-surface-variant">
+          Countdown Launch Week is our bi-annual product launch marathon. Over five consecutive days, we unveil major architectural updates, zero-overhead developer primitives, and open-source tools. Each release drops promptly at 09:00 AM PT accompanied by technical documentation and live sandbox sandpits.
+        </div>
+</div>
+<!-- Item 2 -->
+<div class="faq-item rounded-xl bg-surface-container-low shadow-sm transition-all overflow-hidden">
+<button class="faq-btn w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm font-semibold text-on-surface">
+<span>How do I claim and customize my holographic Launch Ticket?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg font-body-base text-body-base text-on-surface-variant">
+          Click the "Claim your ticket" button at the top of this page. You can authenticate with GitHub to pull your developer avatar and username, choose a custom iridescent color foil scheme, and generate a dynamic SVG badge ready to embed in your GitHub README or share across social media.
+        </div>
+</div>
+<!-- Item 3 -->
+<div class="faq-item rounded-xl bg-surface-container-low shadow-sm transition-all overflow-hidden">
+<button class="faq-btn w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm font-semibold text-on-surface">
+<span>Will all features be available immediately in production?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg font-body-base text-body-base text-on-surface-variant">
+          Yes! Every single product announcement during Countdown Launch Week is accompanied by an immediate production rollout or open-source npm/cargo package release. There are no waitlists for core runtime features.
+        </div>
+</div>
+<!-- Item 4 -->
+<div class="faq-item rounded-xl bg-surface-container-low shadow-sm transition-all overflow-hidden">
+<button class="faq-btn w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm font-semibold text-on-surface">
+<span>How does the referral leaderboard and Gold Ticket variant work?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg font-body-base text-body-base text-on-surface-variant">
+          When colleagues register through your ticket link, your referral score climbs on the live leaderboard. Developers who refer 3 or more peers unlock the rare Gold Holographic Ticket aesthetic and receive exclusive early access to the Day 5 secret keynote.
+        </div>
+</div>
+<!-- Item 5 -->
+<div class="faq-item rounded-xl bg-surface-container-low shadow-sm transition-all overflow-hidden">
+<button class="faq-btn w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm font-semibold text-on-surface">
+<span>Is Countdown free and open source?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-300 text-on-surface-variant">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg font-body-base text-body-base text-on-surface-variant">
+          The core runtime engine, SDKs, and local CLI tools are completely open source under Apache 2.0. Our distributed managed coordination cloud offers a generous free tier for indie developers and teams shipping their first production workloads.
+        </div>
+</div>
+</div>
+<!-- Discord Help Callout -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md text-left">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">help</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-semibold text-on-surface">Still have questions?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chat directly with the engineering leads in our 24/7 Discord channel.</p>
+</div>
+</div>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-body-base text-body-base font-semibold whitespace-nowrap transition-colors shadow-sm" href="#">
+        Join Discord Server
+      </a>
+</div>
+</section>
+<!-- Interactive Client Micro-Script -->
+<script>
+    // Live ticking countdown logic
+    (function initCountdown() {
+      const daysEl = document.getElementById('timer-days');
+      const hoursEl = document.getElementById('timer-hours');
+      const minsEl = document.getElementById('timer-mins');
+      const secsEl = document.getElementById('timer-secs');
+      
+      let s = 42;
+      let m = 38;
+      let h = 14;
+      let d = 2;
+
+      setInterval(() => {
+        if (s > 0) {
+          s--;
+        } else {
+          s = 59;
+          if (m > 0) {
+            m--;
+          } else {
+            m = 59;
+            if (h > 0) {
+              h--;
+            } else {
+              h = 23;
+              if (d > 0) d--;
+            }
+          }
+        }
+
+        if (secsEl) secsEl.textContent = s < 10 ? '0' + s : s;
+        if (minsEl) minsEl.textContent = m < 10 ? '0' + m : m;
+        if (hoursEl) hoursEl.textContent = h < 10 ? '0' + h : h;
+        if (daysEl) daysEl.textContent = d < 10 ? '0' + d : d;
+      }, 1000);
+    })();
+
+    // Timeline Filter Tab behavior
+    const tabAll = document.getElementById('tab-all');
+    const tabUnlocked = document.getElementById('tab-unlocked');
+    const tabLocked = document.getElementById('tab-locked');
+    const unlockedCards = document.querySelectorAll('.day-unlocked');
+    const lockedCards = document.querySelectorAll('.day-locked');
+
+    function setActiveTab(activeBtn) {
+      [tabAll, tabUnlocked, tabLocked].forEach(btn => {
+        if (btn === activeBtn) {
+          btn.className = 'px-space-md py-1.5 rounded bg-surface-container-highest text-on-surface font-body-base text-body-base font-semibold transition-all';
+        } else {
+          btn.className = 'px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-all';
+        }
+      });
+    }
+
+    if (tabAll) {
+      tabAll.addEventListener('click', () => {
+        setActiveTab(tabAll);
+        unlockedCards.forEach(c => c.classList.remove('hidden'));
+        lockedCards.forEach(c => c.classList.remove('hidden'));
+      });
+    }
+
+    if (tabUnlocked) {
+      tabUnlocked.addEventListener('click', () => {
+        setActiveTab(tabUnlocked);
+        unlockedCards.forEach(c => c.classList.remove('hidden'));
+        lockedCards.forEach(c => c.classList.add('hidden'));
+      });
+    }
+
+    if (tabLocked) {
+      tabLocked.addEventListener('click', () => {
+        setActiveTab(tabLocked);
+        unlockedCards.forEach(c => c.classList.add('hidden'));
+        lockedCards.forEach(c => c.classList.remove('hidden'));
+      });
+    }
+
+    // Shadcn style Accordion Behavior
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+
+        // close other open items
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest/80 mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Countdown Engine Inc. All rights reserved.</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container font-badge-code text-badge-code text-on-surface-variant"><span class="material-symbols-outlined text-[13px] text-secondary">terminal</span><span>Built with Next.js 16 & Motion</span></div></div><div class="flex items-center flex-wrap justify-center gap-space-lg"><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Docs</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Discord</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">X (@countdown)</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">RSS Feed</a></div></div></footer></body></html>

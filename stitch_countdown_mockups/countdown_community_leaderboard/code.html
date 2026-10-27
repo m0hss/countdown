@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tech-matrix-grid{background-image:radial-gradient(rgba(244,244,245,0.06) 1px,transparent 1px);background-size:24px 24px;}.noise-overlay{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","secondary-fixed-dim":"#3cddc7","error":"#ffb4ab","outline":"#8f937a","on-error-container":"#ffdad6","surface-container-lowest":"#0e0e10","surface-container-highest":"#353437","surface-container":"#201f22","on-surface":"#e5e1e4","on-primary-fixed-variant":"#3d4d00","surface-dim":"#131315","secondary":"#44e2cd","on-secondary-fixed":"#00201c","outline-variant":"#444934","on-tertiary-fixed-variant":"#6900b3","primary-fixed-dim":"#aed500","on-secondary-container":"#004d44","surface-variant":"#353437","secondary-fixed":"#62fae3","on-background":"#e5e1e4","surface-bright":"#39393b","on-tertiary-container":"#8a33d9","tertiary-fixed":"#f0dbff","on-tertiary":"#490080","surface-tint":"#aed500","surface-container-low":"#1c1b1d","surface-container-high":"#2a2a2c","inverse-on-surface":"#313032","tertiary-container":"#f0dbff","on-primary-container":"#576c00","primary-container":"#c8f32c","on-tertiary-fixed":"#2c0051","on-surface-variant":"#c5c9ae","tertiary-fixed-dim":"#ddb7ff","on-error":"#690005","on-primary":"#293500","inverse-surface":"#e5e1e4","inverse-primary":"#526600","on-secondary":"#003731","primary-fixed":"#c8f32c","surface":"#131315","secondary-container":"#03c6b2","error-container":"#93000a","on-secondary-fixed-variant":"#005047","primary":"#ffffff","on-primary-fixed":"#171e00","background":"#131315"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"timer-display-mobile":["Space Mono"],"metric-mono":["Space Mono"],"headline-md":["Geist"],"headline-lg":["Geist"],"timer-display":["Space Mono"],"display-hero":["Geist"],"headline-lg-mobile":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"],"badge-code":["Space Mono"],"display-hero-mobile":["Geist"],"body-base":["Geist"],"headline-sm":["Geist"]},fontSize:{"timer-display-mobile":["36px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}],"metric-mono":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"timer-display":["64px",{"lineHeight":"68px","letterSpacing":"-0.05em","fontWeight":"700"}],"display-hero":["72px",{"lineHeight":"76px","letterSpacing":"-0.04em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"badge-code":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-base":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface tech-matrix-grid min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-50 noise-overlay"></div><header class="fixed top-0 left-0 w-full z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Countdown Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoVlPbXc_lo6XR747aPX28ZQzb0EfDBBNdaTzGB8Yn1J45qWCKJenwbbOLfUBdFI0ervQt3xZd-0LCAPEC1_8uWgj6bYOs6m8B1NUeonu_ar4Wt2LRnESRYGxOcdybrbNwh0Ug6LBBI6rHnT_PC1DvI0sv5dtKjnCkalJRol7StkZUBUFdBCAQX7sIJDLtx0XA3KvgRakJSiBRyHGROlGfpf02ioatPrnTpYL2X30n"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">COUNTDOWN</span><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container/10 border border-primary-container/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-badge-code text-badge-code font-bold uppercase text-primary-fixed-dim">LAUNCH WEEK 01</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low/70 rounded-lg" data-active-classes="bg-surface-container-high text-on-surface rounded-lg"><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="overview-timeline" href="#">Timeline</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="launch-ticket" href="#">Ticket</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="day-reveal" href="#">Day 03</a><a aria-current="page" class="px-space-md py-1.5 font-body-base transition-colors bg-surface-container-high text-on-surface rounded-lg" data-path="leaderboard" href="#">Leaderboard</a></nav><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-low border border-surface-container-highest"><span class="font-metric-mono text-metric-mono text-on-surface-variant">STARTS IN</span><span class="font-metric-mono text-metric-mono text-primary-fixed-dim tracking-wider font-bold">02D 14H 32M</span></div><a class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-metric-mono text-metric-mono transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-bold">4.2k</span></a><button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-semibold shadow-[0_0_12px_rgba(200,243,44,0.2)] transition-all active:scale-95">Claim Ticket</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-margin-sm md:px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Top Context & Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded bg-surface-container-high text-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim animate-ping"></span>
+<span class="font-badge-code text-badge-code uppercase tracking-wider font-bold">COMMUNITY REFERRALS & CRITERIA</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-hero md:text-display-hero text-on-surface tracking-tight font-extrabold uppercase">
+          LAUNCH WEEK LEADERBOARD
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Top community members who invited fellow builders. The top 10 receive limited-edition mechanical keyboards, custom engraved titanium NFC badges, and VIP private dinner access.
+        </p>
+</div>
+<!-- Action & Direct Referral Link Generator Box -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm bg-surface-container-low p-space-sm rounded-xl shadow-lg">
+<div class="flex items-center gap-space-xs px-space-md py-2 rounded bg-surface-container-highest">
+<span class="material-symbols-outlined text-[18px] text-secondary">link</span>
+<span class="font-metric-mono text-metric-mono text-on-surface select-all" id="ref-url">countdown.dev/lw1?ref=alexrivera</span>
+</div>
+<button class="px-space-lg py-2.5 rounded bg-primary-container text-on-primary-container hover:bg-primary-fixed font-body-base text-body-base font-semibold transition-all active:scale-95 flex items-center justify-center gap-space-xs shadow-md" id="copy-btn">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span>Copy Link</span>
+</button>
+</div>
+</div>
+<!-- Live Telemetry / Stats Ticker -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm uppercase">
+<span>Total Registrations</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">how_to_reg</span>
+</div>
+<div class="font-timer-display-mobile lg:font-timer-display lg:text-timer-display text-on-surface font-bold tracking-tight">24,819</div>
+<div class="flex items-center gap-space-xs text-primary-fixed-dim font-badge-code text-badge-code">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+1,420 IN LAST 24H</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm uppercase">
+<span>Verified Referrals</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">group_add</span>
+</div>
+<div class="font-timer-display-mobile lg:font-timer-display lg:text-timer-display text-on-surface font-bold tracking-tight">9,420</div>
+<div class="flex items-center gap-space-xs text-secondary font-badge-code text-badge-code">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>37.9% CONVERSION</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm uppercase">
+<span>Gold Tickets Minted</span>
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">confirmation_number</span>
+</div>
+<div class="font-timer-display-mobile lg:font-timer-display lg:text-timer-display text-primary-fixed-dim font-bold tracking-tight">248</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-badge-code text-badge-code">
+<span>TIER CAP: 500 PASSES</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm uppercase">
+<span>Time Remaining</span>
+<span class="material-symbols-outlined text-[16px] text-error">hourglass_bottom</span>
+</div>
+<div class="font-timer-display-mobile lg:font-timer-display lg:text-timer-display text-secondary-fixed font-bold tracking-tight" id="live-countdown">
+          04d 18h 32m 14s
+        </div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-badge-code text-badge-code">
+<span>LEADERBOARD FREEZES OCT 24</span>
+</div>
+</div>
+</div>
+<!-- Visual Top 3 Champions Podium -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase font-bold tracking-tight flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim">military_tech</span>
+          Top Champions
+        </h2>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">QUALIFIED FOR TIER 01 PRIZES</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-end">
+<!-- 2nd Place: Silver -->
+<div class="order-2 md:order-1 bg-surface-container-low p-space-lg rounded-xl flex flex-col items-center text-center gap-space-md relative overflow-hidden shadow-xl">
+<div class="absolute top-0 inset-x-0 h-1 bg-secondary-fixed opacity-80"></div>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-highest text-on-surface font-metric-mono text-metric-mono font-bold">
+            2
+          </div>
+<div class="relative w-24 h-24 rounded-full overflow-hidden bg-surface-container-highest shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up modern developer portrait of male programmer with neutral studio lighting and minimal dark grey aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRFIXfJKH7tzAetN6huUBwxqd9JlNPDiFHSXhph_c07bsFcv-D1B1t3dqFBiRbjTcUjHMBKfaxd2J_Kyh4PCFkBbjXEcPApeIar7idqrTIZPaKMHCjcWvMK6uA9f6_ViXUgQ9hKNHnuZqrQHNBHHh4FZoz-mLNAVQEIs5A72kmEJagxaGhHy1kZ6uUaGeDrW5jz_XHHKcU9-cjt_51L2KNwMsRpSKtzGg5Y6eajOE"/>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">@shadcn</span>
+<span class="font-badge-code text-badge-code text-on-surface-variant">FULLSTACK ARCHITECT</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-timer-display text-on-surface font-bold leading-none">142</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant uppercase">invites</span>
+</div>
+<div class="w-full bg-surface-container p-space-sm rounded-lg flex items-center justify-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">shield</span>
+<span class="font-body-sm text-body-sm font-semibold">Titanium NFC Badge + Merch Pack</span>
+</div>
+</div>
+<!-- 1st Place: Gold Aura -->
+<div class="order-1 md:order-2 bg-surface-container p-space-xl rounded-xl flex flex-col items-center text-center gap-space-md relative overflow-hidden shadow-2xl md:-mt-6">
+<div class="absolute top-0 inset-x-0 h-1.5 bg-primary-container"></div>
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-container/15 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">crown</span>
+<span class="font-metric-mono text-metric-mono font-extrabold uppercase">CHAMPION #1</span>
+</div>
+<div class="relative w-28 h-28 rounded-full overflow-hidden bg-surface-container-highest shadow-xl">
+<img class="w-full h-full object-cover" data-alt="High contrast atmospheric studio photo of energetic developer software creator in sleek dark tech hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH9hWz0e78Ryv2SLKmFU1xJCD0k3e4Q3qxtE_fyf5z81ellGZesf7InqzW30soPprn_fChJqFnuT3xAoai-Ya6t2o8C0WfuMJJatlPAz47B-hn-kBgAtY3Vz3g5BInRcPiya_96jiNeu9FSC8bJkACdb0PL3x8CUQzI9xL5wdPXArZuQiEgCzOoujJhwwVMFc_hUz5l2fILash_7Pwijzu9hAylAO8dq5LTvoohz4"/>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">@t3dotgg</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed-dim/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">GOLD TICKET #001</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-timer-display text-primary-fixed-dim font-bold leading-none">184</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant uppercase">invites</span>
+</div>
+<div class="w-full bg-surface-container-high p-space-md rounded-lg flex items-center justify-center gap-space-xs text-on-surface shadow-md">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed-dim">keyboard</span>
+<span class="font-body-base text-body-base font-bold">Custom Mechanical Keyboard + Lifetime Pro</span>
+</div>
+</div>
+<!-- 3rd Place: Bronze -->
+<div class="order-3 md:order-3 bg-surface-container-low p-space-lg rounded-xl flex flex-col items-center text-center gap-space-md relative overflow-hidden shadow-xl">
+<div class="absolute top-0 inset-x-0 h-1 bg-outline opacity-70"></div>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-highest text-on-surface font-metric-mono text-metric-mono font-bold">
+            3
+          </div>
+<div class="relative w-24 h-24 rounded-full overflow-hidden bg-surface-container-highest shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Minimalist headshot portrait of front-end tech creator in graphite backdrop with ambient neon fill lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDEw2GqEuJhV2mANnTPDfb0G9koai-9ykOVqvvm7HfG99UXTrlLgmDPNsTF_1By5u2s_Y2aeqRfnn3RiPwpBUkZISUDIzx22i8aGgpFdjcBBqDlPOCayyyX1XDPUhrA7mKedqr1Yei2n_io-tnVcX0mIVxvMiNEXK9Kbn2DnsTEER1Vm6rRUJAc2x7SkB9EN9Q8ZqMLuKGs-pnPhner-9tOd8w11lCWYstlPZ4HIU"/>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">@leerob</span>
+<span class="font-badge-code text-badge-code text-on-surface-variant">DEV ADVOCATE LEADER</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-timer-display text-on-surface font-bold leading-none">118</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant uppercase">invites</span>
+</div>
+<div class="w-full bg-surface-container p-space-sm rounded-lg flex items-center justify-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">redeem</span>
+<span class="font-body-sm text-body-sm font-semibold">Limited Edition Hoodie + Swag Box</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Ranked Data Matrix Section -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-lg">
+<!-- Toolbar Controls -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- View Filters -->
+<div class="inline-flex p-1 bg-surface-container rounded-lg gap-space-xs" id="tab-controls">
+<button class="tab-btn px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface font-body-base text-body-base font-semibold shadow-sm transition-all" data-tab="all">All Time</button>
+<button class="tab-btn px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-all" data-tab="today">Today's Movers</button>
+<button class="tab-btn px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-all" data-tab="user">My Rank (#42)</button>
+</div>
+<!-- Search Field -->
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container pl-9 pr-space-md py-2 rounded text-on-surface placeholder:text-on-surface-variant font-body-base text-body-base focus:outline-none focus:bg-surface-container-high transition-colors" id="search-input" placeholder="Filter by username or handle..." type="text"/>
+</div>
+</div>
+<!-- High Density Table -->
+<div class="w-full overflow-x-auto rounded-lg">
+<table class="w-full text-left font-body-base text-body-base min-w-[700px]">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-badge-code text-badge-code uppercase tracking-wider">
+<th class="py-3 px-space-md">Rank</th>
+<th class="py-3 px-space-md">Developer</th>
+<th class="py-3 px-space-md">Handle</th>
+<th class="py-3 px-space-md text-right">Referral Count</th>
+<th class="py-3 px-space-md text-center">Gold Ticket</th>
+<th class="py-3 px-space-md">Last Active</th>
+<th class="py-3 px-space-md text-right">Tier Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 divide-transparent" id="table-body">
+<!-- Row 4 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#04</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Avatar profile portrait of Delba software developer in dark high tech office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1YhKqndfgOAnR2gkiTz4eALJlyInlnh3w-U-SfYT9pmE9siFpZw4aLH20rkIPJ9QBZpYnClGPcfTw2nij2w8UxNTK1XB4xln8S7M8rbvX1wrkFj4wY_vG9sbMd9CooCb-l_GJob8idsd97z2l-KCSxmAt4azhyd7NDxpTTQS5sqBnOvsixH95LjPWWCIQI935qu8acVTdQSQ0Nith4X5aYchvFPAjG8U73frGxI4"/>
+</div>
+<span class="font-semibold text-on-surface">Delba de Oliveira</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@delba</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">98</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #004</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">4m ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 5 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#05</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Profile portrait of Steven modern UI engineer wearing dark glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBygrvA6HbxgyP3cAq3EmqW4ROp_nbNavN07d1nSkrksYfGXgaZczqkU2ln6at69gEN5C5uLZ-JItRaIsG5-7STzxDLBMBuAdtI8PqZRtilgMCUI5G055htNZb5oTuWeBKBqG4mMjHp2SZer8v30Ck585YBuRRyirgqp-Lqv0kR0wFMYx7Z77NpLqomXjNX9VzakgS53AS1DBFDH61BxLqI92_7elE2Nfy16mvnZSo"/>
+</div>
+<span class="font-semibold text-on-surface">Steven Tey</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@steventey</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">87</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #009</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">12m ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 6 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#06</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Guillermo cloud architecture founder headshot in monochromatic charcoal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxf71ZieAw2P9dm25mroXUhErntnZgHXWoZqGsP66t664f6K639E4cq-xJHMhgVj1_jqvNEY-Bcgbxo1-TLoL08MFcIgqxIt03PVo_jI0iiMBMK1RcRUh_KO5mYr1YG6WTg1q5N6Jfmdhej6gyFO1PyTfUfburiIE1-4U7wcsEU4vmdwNHyF9opt5sa9RUYuuRTmhxjZgqeYWPosH00Aehofyu_x_GyAuRLi4Jkg4"/>
+</div>
+<span class="font-semibold text-on-surface">Guillermo Rauch</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@rauchg</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">76</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #012</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">31m ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 7 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#07</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Addy web standards engineering leader in professional editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAiCELT4fFcEPqaAU46oI9B4-h7cGCpj9kuYHFCVzfs14etWi8mb_Dah9jmkTC7GeXnzFZ9czZtL0fYWRY3vPIKpQzot-UuzZVFuN4LnDilqrLgvfkJb3fTVGsYHEgorf1-aRTPHVhiQEvNHeM37YFw1mMuUj4mOFKkdbCoidNMmX8aiYgSxAThADPHElzNFQy_NKdJXufW8kM71Si03DayJiFuebicSicqpQy7uo"/>
+</div>
+<span class="font-semibold text-on-surface">Addy Osmani</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@addyosmani</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">64</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #021</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">1h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 8 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#08</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Kent software educator educator with glasses and approachable demeanor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASCyVpGi1JrEBxLjtaQMkDBDpzzQWoVzCQTvp9A6TAUHz6DivpzpNa6xbx4_LkVcM4Se__7_H3Qnb0zM36KhbaiAx8Z4D4HanW0QkOQSEsRLK2F9LgIbW-tt_fweHr9dO4Lhj4I7PG39IhGgRIwIeVSP4fAn8Te2cvrX46D_T6FxfX234peV7xnpMWZHvTPJYmoZqLq81qRHUVqpqvIaEKv0UDg_-WgazIheGlgdM"/>
+</div>
+<span class="font-semibold text-on-surface">Kent C. Dodds</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@kentcdodds</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">59</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #034</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">2h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 9 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#09</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sam animation and UI instructor portrait with clean architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY7ovmj0HIGj_q0nW1Ap1WkqeoHugzNFL5H5KqiZwh1bSIlTwFHpGEwI3NGfmwbMPuwuGJLt56v8qsTgsIMwmDPW_-VEcwyUdmBb1sRb0d1fP6aimROVhGgw0KnrpyLHhrck6dsIF5KKnYSxbicydlPLl0Ax-QQ_IS1yXrGYmSdRApq62kYD7se1SaAho0LluY98F_X9xQxhHKH1zlVrrTcDVwt88V1ZcULmk_xwY"/>
+</div>
+<span class="font-semibold text-on-surface">Sam Selikoff</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@samselikoff</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">51</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">MINTED #048</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">4h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary">ROUNDTABLE</td>
+</tr>
+<!-- Row 10 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#10</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dan frontend core developer profile photo in soft ambient daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxTZcQ5b9_-um3LKQMarMDkIVSgeOJb29vsSzhTaj9A7clvQuzjp0fR42jOJSqXW8dAnoELdkR9Vs6h95sm-rKo_SxxdagrisLzdwmXD6D5iDOhUpmP4rNaL1ifl34AmQyVdGqBUKkj4kRbVxgq9dtCl0IVNBetYQZ7ev4IgFkmVchUhQ52CINScxXDKpGhKU87pwWPBOkRUhyazYZjavNUWwjhMUc4VbrueU63rc"/>
+</div>
+<span class="font-semibold text-on-surface">Dan Abramov</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@dan_abramov</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">48</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">5h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 11 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#11</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Cassidy developer developer relations speaker laughing in casual studio portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaySCffb9PJZB9gk5iNi-Pta__H4r_bWLQ_7AqSN-Q7P6aP8yKRbi5eqbIKBXB2baUCZg8-CLRGfu2bxK8-5q61W0WPYQllhzmjaG_vSKmfKfufZ4hUykXjm1BAwXUxZajsVYLPjgx0x45VXfmXvpjqMnDEGGPfeue8bfrt2WsLjjvcJF-UhVyHdciHRW7kmtY8ynzKaj8gHTHN-VQnFuzWMXRU__PMMXnm_zWM4c"/>
+</div>
+<span class="font-semibold text-on-surface">Cassidy Williams</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@cassidoo</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">43</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">6h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 12 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#12</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Evan open source core author portrait with minimal Japanese design influence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh5te6UC7hkQKbNN9wrh5W_A2FpdVlSj-742xPhLzg2Ns8su46lE4zcJn10yqa6U3FEEnpAvBoqZUevDMpM_kwFrONkrRDpJlkdUBgigEqlotJqTzrPWd4coHGVgG9-fWIB1CqtiVdKhxiJWQjgva7VeuDZXZRdGYCaI5V33jUO4CVC6OmuVJOyICjDOHBxa4XyYeUN0B1xB2FQvXrVu3coT4BAFbz-tOkHfCtXI0"/>
+</div>
+<span class="font-semibold text-on-surface">Evan You</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@youyuxi</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">39</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">8h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 13 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#13</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Rich reactive compiler creator in studio light with modern wireframe glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc0XwDmfaaBx3yLK_ODigefytCF8dWDPBtPQJr60ObibOC8e3RRNmHFVUQb3h4_wGarlTn7HesQjSJMiQJ3uPpxW2Ll1cAmQcqWB9HwaN533kn0A277_9-Yu-EJDSylXdzEsYRRAiewko_6avyRGbcfh02UofygLp6QqHE9toOXEXSZNRXN9SgH7PEQiAQHb_kpMilNQWYc9cPwo3X38dComnp-KqLrbYUoVhonrA"/>
+</div>
+<span class="font-semibold text-on-surface">Rich Harris</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@rich_harris</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">35</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">11h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 14 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#14</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sophie systems programmer avatar with sleek minimalist studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADfkagMneWb5Mi15OUVte-WdttZlGqR0b0_3oZTdwTxpc4dyZlsary1uYjx965VaFWvmgsc1SraeADyCDsFQwUkZ35VXBvdNoZQNA6tFlC80_be-qkrFi_h40TWax1j_OtxhVBw8lx2wYtJzV-L9UGHcTnf_JMQBDGoaCrSTP9uazoAKo-SWxiSQz0DrXhT6ni7rQN1i41nKg4-O3Lfa_mr5osUECleLcBSv1XYBc"/>
+</div>
+<span class="font-semibold text-on-surface">Sophie Alpert</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@sophiebits</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">31</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">14h ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 15 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#15</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fred web bundler designer in industrial loft creative workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqOcj5h4DbdWSlW21paCqZQmPRsawuFDJjSTys3te6I4d8tbUorU3MiFei__oWsBFbNvdiDNU3TxtJuA8Djg-NvPhOM_wjXJoJJ9EQGAmlO3mWBZudwlyc1Hg12dSNufQHtiKUrjj5botj6DUGsbWG6YfO-uILO4z5Fb7NyXVSk4mcasN9DuxSkepacbJqm5NBrk7B1XKTLXk3U83c77DAfh44TB4qpoj9G3hDtmI"/>
+</div>
+<span class="font-semibold text-on-surface">Fred K. Schott</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@fks</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">28</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">1d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 16 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#16</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Devon fullstack creative developer profile in ambient neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHpAXGyWrBsVW_VRhmZDPOh6_idpgT5bTBpF6upIxxy1pJRmegiWeMVJT_arRLtO6YT3DMp3N1ldLV2h4fhJhXJLSnvGSSIqtsxnbQv7nu0Q5oppUGBPB0HmNcES7p29xD5vKY8NIxXdB7VQ-5T61metP1ttVHqR1UuB9OG5mroHChfzIUb58QYgSGsSYAeNix_q-d_sPEL8qDFSsnoKpsv03a9pXbsXPYxwx2McI"/>
+</div>
+<span class="font-semibold text-on-surface">Devon Govett</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@devongovett</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">26</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">1d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 17 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#17</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Lydia JavaScript educator portrait with high contrast black turtleneck sweater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPlkkf8i3YmoSynjO9saBBXMcdYN1vshQ0KhC2qSLa6qwTzZohGFmI-X5oiH0usyy1xwZHL5fC05cHjFLSigIdsn07atMEKkDq9Ecrd8Gk1gpl8OxkNFjHtu79KbZSsBhwOY2cWf4anEFIODYmj4Bc9p13c5LD8BjWS9DMKfAcqzJcv0qN2SgQhPFoZafUy9hs5PBd-F9W7g_B8q-w18yw30xAX_Q0h3zQ4ZtTM1s"/>
+</div>
+<span class="font-semibold text-on-surface">Lydia Hallie</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@lydiahallie</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">24</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">1d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 18 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#18</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Tanner state management library author profile in outdoor alpine lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuj5AhLqfFHpmfnrYqCy9HxwU8Pg8Xab4wFNtojrYJMR38SQqIMqUhErCk4JyZWEedQ8niw3W4IWZc9Fk8Axaqo_m494BC_RPCiyvjQD-SwvqFXn4i9lrzzfkDPVMqLrGXSzQ4nIfw4W1SkyQJ1cBzDJOgC-K7X2gjwjvwm9tJPpYhRcT20SZLnabe0xyfA1Uq9RLJIqTpfgjwTFTVBksul1zMhwcb83Hc8HMbbSM"/>
+</div>
+<span class="font-semibold text-on-surface">Tanner Linsley</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@tannerlinsley</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">22</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">2d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 19 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#19</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Sunil css systems architect portrait with monochromatic modern attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpzQDetVqwHFkb4TeRFR56PoAi3WQ8FGLXwDyzlRGl8pkl-WQsg5V7YVDsm5L0v3BJ9O8eCNB6c5jZGYMSeNqTwjPAqqwaHGMxWwkrqtqYeqSuUKMABRAGUd3I1JQ_4jH6oEtnrxIAi6fdPPmb5-0s-yRDgWXoo2mQDQelE6KVSBqG_66mEwldC6q2Agn2LOZFntvxLov2cNnwc1D2Fm8IUDh0pa22eqcIvXIE1LU"/>
+</div>
+<span class="font-semibold text-on-surface">Sunil Pai</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@threepointone</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">20</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">2d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+<!-- Row 20 -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-md font-metric-mono text-metric-mono font-bold text-on-surface">#20</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Theo streaming software engineer portrait with sleek studio mic setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpd8xG1ulBoLL4VcdLqOZYaxJVoBIlQsNEARUrAXsJNOunqOe7xw1KHkkkEnu6nyp8KWz-byK1ylqYCY9Zrs_SyA6lY7CqfuTdeDfntlRH4W_lj4yVL6NNApDK_7EyP4TnxHFWt-7Erc0FrEMN5waqz46sbXwXnoSPTOify9cbDBg2Rq3NpXQ2yD44Av29OvOIhBjyWJkS9PI89MwwDvju2lW_SC__j5b26FP3GJY"/>
+</div>
+<span class="font-semibold text-on-surface">Theo Browne</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-metric-mono text-metric-mono">@theobrowne</td>
+<td class="py-3 px-space-md text-right font-metric-mono text-metric-mono font-bold text-on-surface">19</td>
+<td class="py-3 px-space-md text-center">
+<span class="text-on-surface-variant font-metric-mono text-metric-mono">—</span>
+</td>
+<td class="py-3 px-space-md text-on-surface-variant font-body-sm text-body-sm">2d ago</td>
+<td class="py-3 px-space-md text-right font-badge-code text-badge-code text-secondary-fixed">SWAG BUNDLE</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Sticky / Anchor User Rank Spotlight Banner -->
+<div class="bg-surface-container-high p-space-md rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+            AR
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-base text-body-base font-bold text-on-surface">Your Position: #42</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant">(@alexrivera)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-primary-fixed-dim font-badge-code text-badge-code">DISCORD BADGE TIER</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">14 referrals verified • 6 more to unlock Swag Box & Gold Pass lottery</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<div class="w-32 bg-surface-container rounded-full h-2 overflow-hidden hidden md:block">
+<div class="bg-primary-fixed-dim h-full w-[70%]"></div>
+</div>
+<button class="px-space-md py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-semibold transition-all">
+            Share on X
+          </button>
+</div>
+</div>
+</div>
+<!-- Referral Rules & Milestone Cards -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase font-bold tracking-tight">
+          Milestone Incentives & Rewards
+        </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+          Prizes unlock synchronously as your verified invite count crosses each threshold before Launch Week concludes.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Milestone 1: 5 Referrals -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary font-badge-code text-badge-code font-bold">TIER 01 • UNLOCKED</span>
+<span class="font-metric-mono text-metric-mono text-on-surface-variant font-bold">5 REFS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Digital Hologram Badge & Early Sandbox</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Immediate access to the exclusive Discord alpha guild, an animated holographic badge for your public ticket, and 48-hour early sandbox runtime access.
+            </p>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-badge-code text-badge-code">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>CRITERIA MET BY 1,280 BUILDERS</span>
+</div>
+</div>
+<!-- Milestone 2: 15 Referrals -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between gap-space-lg shadow-md relative overflow-hidden">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-fixed-dim font-badge-code text-badge-code font-bold">TIER 02 • IN PROGRESS</span>
+<span class="font-metric-mono text-metric-mono text-primary-fixed-dim font-bold">15 REFS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Official Launch Week Swag Pack</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Limited heavy-weight cotton Launch Week 01 hoodie, laser-cut custom aluminum keycap, and sticker sheet shipped to your doorstep anywhere in the world.
+            </p>
+</div>
+<div class="flex items-center gap-space-xs text-primary-fixed-dim font-badge-code text-badge-code">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>GLOBAL EXPRESS FREIGHT INCLUDED</span>
+</div>
+</div>
+<!-- Milestone 3: 50+ Referrals -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-tertiary-fixed font-badge-code text-badge-code font-bold">TIER 03 • VIP ELITE</span>
+<span class="font-metric-mono text-metric-mono text-tertiary-fixed font-bold">50+ REFS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Founders & Core Team Roundtable</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Private executive briefing call with Countdown core engineers, private Discord channel with direct roadmap input, and an automatic physical Gold NFC badge.
+            </p>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary-fixed font-badge-code text-badge-code">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>ONLY 9 SEATS CLAIMED SO FAR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast (Hidden by default) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="bg-primary-container text-on-primary-container px-space-md py-3 rounded-lg shadow-2xl flex items-center gap-space-sm font-body-base text-body-base font-semibold">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+<span>Referral link copied to clipboard!</span>
+</div>
+</div>
+</div>
+<script>
+  // Copy Link with Toast notification
+  const copyBtn = document.getElementById('copy-btn');
+  const toast = document.getElementById('toast');
+  const refUrl = document.getElementById('ref-url');
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(refUrl.innerText).then(() => {
+        toast.classList.remove('translate-y-16', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-16', 'opacity-0');
+        }, 2600);
+      });
+    });
+  }
+
+  // Live countdown micro-animator
+  let secondsRemaining = 4 * 86400 + 18 * 3600 + 32 * 60 + 14;
+  const countdownEl = document.getElementById('live-countdown');
+  
+  if (countdownEl) {
+    setInterval(() => {
+      if (secondsRemaining > 0) {
+        secondsRemaining--;
+        const d = Math.floor(secondsRemaining / 86400);
+        const h = Math.floor((secondsRemaining % 86400) / 3600);
+        const m = Math.floor((secondsRemaining % 3600) / 60);
+        const s = secondsRemaining % 60;
+        countdownEl.innerText = `${String(d).padStart(2, '0')}d ${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
+      }
+    }, 1000);
+  }
+
+  // Interactive Table Search Filter
+  const searchInput = document.getElementById('search-input');
+  const tableRows = document.querySelectorAll('#table-body tr');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      tableRows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  }
+
+  // Tab switcher visual toggle
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-semibold', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-high', 'text-on-surface', 'font-semibold', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest/80 mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Countdown Engine Inc. All rights reserved.</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container font-badge-code text-badge-code text-on-surface-variant"><span class="material-symbols-outlined text-[13px] text-secondary">terminal</span><span>Built with Next.js 16 & Motion</span></div></div><div class="flex items-center flex-wrap justify-center gap-space-lg"><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Docs</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Discord</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">X (@countdown)</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">RSS Feed</a></div></div></footer></body></html>

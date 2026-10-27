@@ -1,0 +1,22 @@
+---
+title: "Distributed Cache Engine: Keep the useful parts close."
+shortTitle: "Distributed Cache Engine"
+teaser: "A fictional cache architecture built around shared context, predictable invalidation, and fewer round trips."
+revealAt: "2026-11-10T09:00:00Z"
+media: "layers"
+version: "v1.2.0"
+category: "DISTRIBUTED CACHE"
+authorIds: ["rowan", "mika"]
+---
+
+## A cache with a shared sense of time.
+
+Fast reads are useful. Knowing when those reads are stale is just as important. This release explores a cache that makes both sides of that story visible.
+
+### Follow the invalidation.
+
+Dispatch an event in the local preview to see the sample regions converge. The benchmark view uses illustrative data to explain the tradeoff.
+
+<CodeSample day={2} />
+
+<Testimonial />

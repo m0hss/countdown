@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tech-matrix-grid{background-image:radial-gradient(rgba(244,244,245,0.06) 1px,transparent 1px);background-size:24px 24px;}.noise-overlay{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","secondary-fixed-dim":"#3cddc7","error":"#ffb4ab","outline":"#8f937a","on-error-container":"#ffdad6","surface-container-lowest":"#0e0e10","surface-container-highest":"#353437","surface-container":"#201f22","on-surface":"#e5e1e4","on-primary-fixed-variant":"#3d4d00","surface-dim":"#131315","secondary":"#44e2cd","on-secondary-fixed":"#00201c","outline-variant":"#444934","on-tertiary-fixed-variant":"#6900b3","primary-fixed-dim":"#aed500","on-secondary-container":"#004d44","surface-variant":"#353437","secondary-fixed":"#62fae3","on-background":"#e5e1e4","surface-bright":"#39393b","on-tertiary-container":"#8a33d9","tertiary-fixed":"#f0dbff","on-tertiary":"#490080","surface-tint":"#aed500","surface-container-low":"#1c1b1d","surface-container-high":"#2a2a2c","inverse-on-surface":"#313032","tertiary-container":"#f0dbff","on-primary-container":"#576c00","primary-container":"#c8f32c","on-tertiary-fixed":"#2c0051","on-surface-variant":"#c5c9ae","tertiary-fixed-dim":"#ddb7ff","on-error":"#690005","on-primary":"#293500","inverse-surface":"#e5e1e4","inverse-primary":"#526600","on-secondary":"#003731","primary-fixed":"#c8f32c","surface":"#131315","secondary-container":"#03c6b2","error-container":"#93000a","on-secondary-fixed-variant":"#005047","primary":"#ffffff","on-primary-fixed":"#171e00","background":"#131315"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"timer-display-mobile":["Space Mono"],"metric-mono":["Space Mono"],"headline-md":["Geist"],"headline-lg":["Geist"],"timer-display":["Space Mono"],"display-hero":["Geist"],"headline-lg-mobile":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"],"badge-code":["Space Mono"],"display-hero-mobile":["Geist"],"body-base":["Geist"],"headline-sm":["Geist"]},fontSize:{"timer-display-mobile":["36px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}],"metric-mono":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"timer-display":["64px",{"lineHeight":"68px","letterSpacing":"-0.05em","fontWeight":"700"}],"display-hero":["72px",{"lineHeight":"76px","letterSpacing":"-0.04em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"badge-code":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-base":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface tech-matrix-grid min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-50 noise-overlay"></div><header class="fixed top-0 left-0 w-full z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Countdown Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoVlPbXc_lo6XR747aPX28ZQzb0EfDBBNdaTzGB8Yn1J45qWCKJenwbbOLfUBdFI0ervQt3xZd-0LCAPEC1_8uWgj6bYOs6m8B1NUeonu_ar4Wt2LRnESRYGxOcdybrbNwh0Ug6LBBI6rHnT_PC1DvI0sv5dtKjnCkalJRol7StkZUBUFdBCAQX7sIJDLtx0XA3KvgRakJSiBRyHGROlGfpf02ioatPrnTpYL2X30n"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">COUNTDOWN</span><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container/10 border border-primary-container/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-badge-code text-badge-code font-bold uppercase text-primary-fixed-dim">LAUNCH WEEK 01</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low/70 rounded-lg" data-active-classes="bg-surface-container-high text-on-surface rounded-lg"><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="overview-timeline" href="#">Timeline</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="launch-ticket" href="#">Ticket</a><a aria-current="page" class="px-space-md py-1.5 font-body-base transition-colors bg-surface-container-high text-on-surface rounded-lg" data-path="day-reveal" href="#">Day 03</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="leaderboard" href="#">Leaderboard</a></nav><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-low border border-surface-container-highest"><span class="font-metric-mono text-metric-mono text-on-surface-variant">STARTS IN</span><span class="font-metric-mono text-metric-mono text-primary-fixed-dim tracking-wider font-bold">02D 14H 32M</span></div><a class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-metric-mono text-metric-mono transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-bold">4.2k</span></a><button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-semibold shadow-[0_0_12px_rgba(200,243,44,0.2)] transition-all active:scale-95">Claim Ticket</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Day Navigation Ribbon Bar -->
+<div class="w-full bg-surface-container-lowest/90 backdrop-blur-md sticky top-16 z-30 shadow-md">
+<div class="max-w-7xl mx-auto px-margin-sm md:px-margin py-3 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md shrink-0">
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-badge-code text-badge-code" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>TIMELINE MATRIX</span>
+</a>
+<span class="w-1 h-1 rounded-full bg-surface-container-highest hidden md:inline-block"></span>
+<span class="hidden md:inline-flex items-center gap-1.5 font-badge-code text-badge-code text-on-surface-variant">
+<span>EVENT</span>
+<span class="text-primary font-bold">LW-01</span>
+</span>
+</div>
+<!-- Scroller Days Ribbon -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+<a class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" href="#">
+<span class="font-badge-code text-badge-code text-secondary">01</span>
+<span class="font-body-sm text-body-sm font-medium">AI Edge</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+</a>
+<a class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shrink-0" href="#">
+<span class="font-badge-code text-badge-code text-secondary">02</span>
+<span class="font-body-sm text-body-sm font-medium">Cache Engine</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+</a>
+<!-- Day 03 Active -->
+<div class="relative flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface shadow-xl shrink-0">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping absolute -top-0.5 -right-0.5"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-badge-code text-badge-code font-bold text-primary-fixed-dim">DAY 03</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Data Mesh</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container/20 font-badge-code text-[9px] text-primary-fixed-dim font-bold">LIVE</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant/70 shrink-0">
+<span class="font-badge-code text-badge-code">04</span>
+<span class="font-body-sm text-body-sm font-medium">Storage</span>
+<div class="flex items-center gap-1 font-badge-code text-[10px] text-outline">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span>18h</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant/70 shrink-0">
+<span class="font-badge-code text-badge-code">05</span>
+<span class="font-body-sm text-body-sm font-medium">Finale</span>
+<div class="flex items-center gap-1 font-badge-code text-[10px] text-outline">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span>42h</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Header Release Narrative -->
+<section class="max-w-7xl mx-auto px-margin-sm md:px-margin pt-space-xl pb-space-lg w-full">
+<div class="flex flex-col gap-space-md">
+<!-- Glow Release Badge -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/10 shadow-[0_0_24px_rgba(200,243,44,0.18)]">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-badge-code text-badge-code font-bold uppercase tracking-wider text-primary-fixed-dim">DAY 03 REVEAL • OCTOBER 23, 2025</span>
+</div>
+<div class="px-2.5 py-0.5 rounded bg-surface-container-high font-badge-code text-badge-code text-on-surface-variant">
+          v2.4.0-RELEASE
+        </div>
+<div class="px-2.5 py-0.5 rounded bg-secondary/10 font-badge-code text-badge-code text-secondary font-semibold">
+          STABLE MESH PROTOCOL
+        </div>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="flex flex-col gap-space-sm max-w-5xl">
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-primary tracking-tight">
+          Universal Data Mesh: Zero-Latency State Synchronization
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Connect client caches, serverless edge workers, and distributed Postgres with declarative reactive subscriptions and sub-15ms multi-region replication.
+        </p>
+</div>
+<!-- Authors Meta Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Sarah Lin" class="inline-block h-10 w-10 rounded-full ring-2 ring-surface object-cover" data-alt="Close-up professional portrait of Sarah Lin, Principal Distributed Systems Architect, technical ambient lighting in deep indigo and lime shadows with confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM0V8-gE_seKLhh6qKk0JUJKq6aDN36sQvMM_8eBxKpkruEhviws-8NqOvV-2dhcQit_GJfb0SOjuxCHla64C6QrGgUsFqivmL3m6Kt8SWud4MI8oaQgXWqwNt-ot6jnoCi0eD4ElG1VMEzx5gpQ1TgNFXORHZB82PctaIpfrGanjW9FKEwyBy_WYxF613zPQttA9oPtzFAljRpG4yo7FSF8kkRt0e6iUZFqHjxew"/>
+<img alt="Marcus Vance" class="inline-block h-10 w-10 rounded-full ring-2 ring-surface object-cover" data-alt="Portrait of Marcus Vance, Lead Edge Runtime Engineer, wearing modern dark technical apparel against clean subtle geometric background with neon cyan rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBz1EA9bkv3BECI1S5b5ynFP_d5Z5HU3cispDcikwz60Ckr7l-0K58QomCGWRA5X1LszRzNjVzXzeI5_cHRFIYRC8HztYt3rWsCqXm6duXs3miIJsvTFHxCE8530hcUX6VYIlAGrSSDcTqZ3OMARNIxrfcHYuZKloaeckas8Y66PmzAsYg-vGppWRBpd8RkCu5WD8RAwlkuUaPBwzHHvRSUAHbwCr_9vWg6Dp8H18"/>
+</div>
+<div class="flex flex-col">
+<span class="font-body-base text-body-base font-semibold text-primary">Shipped by Sarah Lin & Marcus Vance</span>
+<span class="font-badge-code text-badge-code text-on-surface-variant">Systems Architecture & Realtime Engine</span>
+</div>
+</div>
+<!-- Social Action Buttons -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all font-badge-code text-badge-code" id="bookmarkBtn">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+<span>SAVE RELEASE</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary transition-all font-badge-code text-badge-code" id="copyShareBtn">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>SHARE</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Hero Media Block -->
+<section class="max-w-7xl mx-auto px-margin-sm md:px-margin pb-space-xl w-full">
+<div class="rounded-xl bg-surface-container-low shadow-2xl overflow-hidden">
+<!-- Media Player Header Bar -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container">
+<!-- Interactive Player Mode Tabs -->
+<div class="flex items-center gap-1" id="interactiveTabs">
+<button class="tab-button px-space-md py-1.5 rounded font-badge-code text-badge-code font-bold bg-surface-container-high text-primary-fixed-dim transition-all" data-tab="demo">
+            Interactive Demo
+          </button>
+<button class="tab-button px-space-md py-1.5 rounded font-badge-code text-badge-code text-on-surface-variant hover:text-primary transition-all" data-tab="benchmark">
+            Architecture Benchmark
+          </button>
+<button class="tab-button px-space-md py-1.5 rounded font-badge-code text-badge-code text-on-surface-variant hover:text-primary transition-all" data-tab="stream">
+            Live Stream View
+          </button>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-badge-code text-badge-code text-on-surface-variant">
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            4K UHD
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">3:42 DEMO</span>
+</div>
+</div>
+<!-- Tab 1: Interactive Live Node Sync Demo -->
+<div class="p-space-md lg:p-space-lg flex flex-col lg:flex-row gap-space-lg items-stretch" id="tabContentDemo">
+<!-- Left Visual Terminal / State Inspector -->
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container/70"></span>
+<span class="w-3 h-3 rounded-full bg-secondary/70"></span>
+<span class="ml-2 font-badge-code text-badge-code text-on-surface-variant">mesh-daemon — wss://iad.countdown.mesh/v1</span>
+</div>
+<span class="flex items-center gap-1 font-badge-code text-[11px] text-secondary">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              P2P CONNECTED
+            </span>
+</div>
+<!-- Code Stream Output Box -->
+<div class="space-y-2 font-badge-code text-badge-code py-4 text-on-surface-variant">
+<div class="text-on-surface-variant/50">$ npx @countdown/mesh subscribe --region=global-anycast</div>
+<div class="text-primary-fixed-dim">[INIT] Handshake verified with Tokyo (NRT), Frankfurt (FRA), Ashburn (IAD)</div>
+<div class="text-on-surface">[SYNC] Channel `org_state:4992` established. Topology: 48 Edge Nodes</div>
+<div class="p-3 rounded bg-surface-container-low font-metric-mono text-metric-mono text-secondary flex items-center justify-between">
+<span>REPLICATION DRIFT</span>
+<span class="font-bold text-primary tracking-widest" id="driftCounter">0.012 ms</span>
+</div>
+<div class="text-on-surface-variant/80 text-[11px] font-badge-code">
+              [CRDT-MERGE] VectorClock: {FRA: 4821, IAD: 4821, NRT: 4821} - Zero conflict resolution required
+            </div>
+</div>
+<!-- Live Interactive Sim Trigger -->
+<div class="pt-3 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-badge-code text-badge-code font-bold transition-all shadow-md" id="dispatchPulseBtn">
+                TRIGGER GLOBAL WRITE
+              </button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-badge-code text-badge-code transition-all" id="resetDemoBtn">
+                RESET STATE
+              </button>
+</div>
+<span class="font-badge-code text-[11px] text-on-surface-variant" id="pulseStatus">Status: Idle (Syncing)</span>
+</div>
+</div>
+<!-- Right Side: Latency Visualizer & Topology -->
+<div class="w-full lg:w-96 flex flex-col gap-space-md justify-between">
+<!-- Latency Gauge Card -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code text-on-surface-variant">GLOBAL EDGE LATENCY</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 font-badge-code text-badge-code text-primary-fixed-dim font-bold">95.4% FASTER</span>
+</div>
+<!-- Latency Comparison Metrics -->
+<div class="py-4 space-y-4">
+<div>
+<div class="flex justify-between font-badge-code text-[11px] pb-1">
+<span class="text-primary-fixed-dim font-bold">Universal Data Mesh (CRDT)</span>
+<span class="text-primary font-bold">12ms</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full w-[8%] transition-all duration-500" id="meshBar"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-badge-code text-[11px] pb-1 text-on-surface-variant">
+<span>Traditional Multi-Master DB Sync</span>
+<span>240ms</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden">
+<div class="h-full bg-outline rounded-full w-[82%]"></div>
+</div>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+              Propagated instantly to 320 points of presence without central lock contention.
+            </div>
+</div>
+<!-- Video Play Trigger Card -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest group cursor-pointer" id="playDemoVideo">
+<div class="w-full h-36 bg-cover bg-center transition-transform group-hover:scale-105 duration-300 opacity-60" data-alt="High tech cinematic dark-mode interface demo recording thumbnail showcasing glowing vector networks, multi-region real-time database topology visualizer on dark gray background with sharp neon accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtX2-JianJY8Um6fJr_W_nz7RLyUc0RD6jCrUxbj59Nrj_wtTvs8UGufvqoiAOU-P_3oYhnOn5rRX18SDLRT0yeHfHcaKZw3ir2oAO-gje-0BKT5xnU69ZfPqf3kBevCa8j2ySbJRs9aNbIOW7FpmqGJGfP2hnMOhJuw1PbPgfoC_VK-2voxxYlGJ-TPlCtQWpU3XtZqA73QDtfzM2zRlulbx8peTdlhijlkstbjM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface font-badge-code text-[11px]">
+<span class="font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">smart_display</span>
+                WALKTHROUGH BY ARCHITECT
+              </span>
+<span class="text-primary-fixed-dim">3m 42s</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 2: Benchmark Graph (Hidden by default, toggled via JS) -->
+<div class="hidden p-space-md lg:p-space-lg" id="tabContentBenchmark">
+<div class="bg-surface-container-lowest p-space-lg rounded-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Throughput & Propagation Benchmarks</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">Independent test suite executed over 10,000 parallel continuous mutations.</p>
+</div>
+<div class="flex items-center gap-4 font-badge-code text-badge-code">
+<span class="flex items-center gap-1 text-primary-fixed-dim"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>Mesh Protocol</span>
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-full bg-outline"></span>Postgres Wal2json</span>
+</div>
+</div>
+<!-- Inline SVG Latency Comparison Chart -->
+<div class="w-full h-64 flex items-end">
+<svg class="w-full h-full" fill="none" viewbox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#26262B" stroke-width="1" x1="0" x2="800" y1="200" y2="200"></line>
+<line stroke="#26262B" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="140" y2="140"></line>
+<line stroke="#26262B" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="80" y2="80"></line>
+<line stroke="#26262B" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="20" y2="20"></line>
+<!-- Legacy Bar series -->
+<rect fill="#444934" height="150" rx="2" width="36" x="80" y="50"></rect>
+<rect fill="#444934" height="160" rx="2" width="36" x="220" y="40"></rect>
+<rect fill="#444934" height="140" rx="2" width="36" x="360" y="60"></rect>
+<rect fill="#444934" height="170" rx="2" width="36" x="500" y="30"></rect>
+<rect fill="#444934" height="155" rx="2" width="36" x="640" y="45"></rect>
+<!-- Data Mesh series -->
+<rect fill="#C8F32C" height="14" rx="2" width="36" x="124" y="186"></rect>
+<rect fill="#C8F32C" height="16" rx="2" width="36" x="264" y="184"></rect>
+<rect fill="#C8F32C" height="12" rx="2" width="36" x="404" y="188"></rect>
+<rect fill="#C8F32C" height="18" rx="2" width="36" x="544" y="182"></rect>
+<rect fill="#C8F32C" height="15" rx="2" width="36" x="684" y="185"></rect>
+<!-- Axis labels -->
+<text fill="#8F937A" font-family="Space Mono" font-size="11" x="110" y="224">US-EAST</text>
+<text fill="#8F937A" font-family="Space Mono" font-size="11" x="250" y="224">EU-CENTRAL</text>
+<text fill="#8F937A" font-family="Space Mono" font-size="11" x="390" y="224">AP-NORTHEAST</text>
+<text fill="#8F937A" font-family="Space Mono" font-size="11" x="530" y="224">SA-EAST</text>
+<text fill="#8F937A" font-family="Space Mono" font-size="11" x="670" y="224">AF-SOUTH</text>
+</svg>
+</div>
+<div class="mt-4 flex items-center justify-between font-badge-code text-badge-code text-on-surface-variant">
+<span>Chart: Latency in ms (Lower is superior)</span>
+<span class="text-secondary">Source: Global Edge P99 Latency Audit</span>
+</div>
+</div>
+</div>
+<!-- Tab 3: Live Stream View (Hidden by default) -->
+<div class="hidden p-space-md lg:p-space-lg" id="tabContentStream">
+<div class="bg-surface-container-lowest p-space-md rounded-lg font-badge-code text-badge-code space-y-2 h-72 overflow-y-auto">
+<div class="text-secondary">[CONNECTED] WebSocket session client_id: ws_018f2a93</div>
+<div class="text-on-surface-variant">[STREAM] Packet #10423 payload: {"userId":"usr_89a","event":"canvas:cursor_move","x":842,"y":302} → ack 1.4ms</div>
+<div class="text-on-surface-variant">[STREAM] Packet #10424 payload: {"userId":"usr_89a","event":"canvas:cursor_move","x":845,"y":305} → ack 1.1ms</div>
+<div class="text-primary-fixed-dim">[REPLICATE] Replicating delta to 12 subscribers across FRA, IAD, SYD...</div>
+<div class="text-on-surface-variant">[STREAM] Packet #10425 payload: {"userId":"usr_71c","event":"layer:toggle","layerId":"comp_90"} → ack 2.3ms</div>
+<div class="text-secondary">[HEALTH] Heartbeat ok. 0 dropped frames. Bandwidth usage: 14.2 KB/s</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Deep Dive Technical Specifications -->
+<section class="max-w-7xl mx-auto px-margin-sm md:px-margin pb-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Narrative Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase tracking-wider">TECHNICAL SPECIFICATION</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Why we built Universal Data Mesh</h2>
+<div class="space-y-4 mt-4 font-body-base text-body-base text-on-surface-variant leading-relaxed">
+<p>
+              In traditional web architectures, edge workers either query a centralized database across trans-oceanic cables, incur stale reads from isolated Redis replicas, or force developers to assemble brittle manual WebSocket bridges.
+            </p>
+<p>
+              With <span class="text-primary font-medium">Universal Data Mesh</span>, state is no longer an afterthought anchored to a single availability zone. We treat distributed memory as a unified, conflict-free reactive fabric. Every connected React client or edge compute instance subscribes directly to scoped state channels, receiving live delta streams that automatically converge within single-digit milliseconds.
+            </p>
+</div>
+</div>
+<!-- Code Block -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-lg">
+<div class="flex items-center justify-between px-space-md py-2.5 bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="font-badge-code text-badge-code text-on-surface">components/LiveFeed.tsx</span>
+</div>
+<button class="flex items-center gap-1 font-badge-code text-badge-code text-on-surface-variant hover:text-primary transition-colors" id="copyCodeBtn">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>COPY TSX</span>
+</button>
+</div>
+<div class="p-space-md bg-surface-container-lowest overflow-x-auto font-badge-code text-badge-code leading-6">
+<pre class="text-on-surface"><code><span class="text-on-surface-variant">import</span> { useDataMesh } <span class="text-on-surface-variant">from</span> <span class="text-primary-fixed-dim">'@countdown/mesh'</span>;
+
+<span class="text-on-surface-variant">export function</span> <span class="text-primary font-bold">LiveFeed</span>() {
+  <span class="text-secondary">// Automatically joins localized edge node with failover routing</span>
+  <span class="text-on-surface-variant">const</span> { state, dispatch } = <span class="text-secondary">useDataMesh</span>({ 
+    channel: <span class="text-primary-fixed-dim">'global-presence'</span>,
+    crdt: <span class="text-primary-fixed-dim">'lww-register'</span>
+  });
+
+  <span class="text-on-surface-variant">return</span> (
+    <<span class="text-primary">div</span> <span class="text-on-surface-variant">className</span>=<span class="text-primary-fixed-dim">"flex items-center gap-2"</span>>
+      <<span class="text-primary">span</span>>Replication Latency: {state.latency}ms</<span class="text-primary">span</span>>
+      <<span class="text-primary">button</span> <span class="text-on-surface-variant">onClick</span>={() => <span class="text-secondary">dispatch</span>({ event: <span class="text-primary-fixed-dim">'ping'</span> })}>
+        Pulse Node
+      </<span class="text-primary">button</span>>
+    </<span class="text-primary">div</span>>
+  );
+}</code></pre>
+</div>
+</div>
+<!-- Quote from Customer -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-lg flex flex-col justify-between">
+<div class="space-y-3">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl">format_quote</span>
+<p class="font-body-base text-body-base italic text-on-surface leading-relaxed">
+              "Integrating Countdown's Data Mesh cut our multiplayer canvas synchronization latency by 85% worldwide. Our team eliminated thousands of lines of fragile WebSocket reconciliation code in an afternoon."
+            </p>
+</div>
+<div class="flex items-center gap-space-md pt-4 mt-2">
+<img alt="Elena Rostova" class="w-10 h-10 rounded-full object-cover ring-1 ring-surface-container-highest" data-alt="Square professional headshot of Staff Software Engineer Elena Rostova, minimal cinematic studio lighting with dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB62fb3FJ21XCOYydD3AJ36dMoT57QiwzHnIv1ujjBFiDIACABKkFPJXojizzwiY5b3aoCGP-X8roc7wAqXRuGLsWaJapek8lLdnFA1TtPTZQlWDMw8KbyHrJIIVRT2eMjeN3PmN2vDC9tLXfGMNuf6-xpzd4ilQhWOZqog5uFvJMG5hqjC8L-OgrZI1dg-U0mGfNnnlq_7LoQlH-MJBJMKzWOcMAKbw_wFPNRPcqI"/>
+<div>
+<div class="font-body-base text-body-base font-bold text-primary">Elena Rostova</div>
+<div class="font-badge-code text-badge-code text-on-surface-variant">Staff Infrastructure Engineer at Figma</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature Highlight Column Cards (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-2xl">sync_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">State-based CRDTs</h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+            Automatic deterministic conflict resolution. State merges consistently across disparate clients without server locks or serialization bottlenecks.
+          </p>
+<div class="mt-3 font-badge-code text-badge-code text-secondary font-semibold">
+            • Mathematically proven convergence
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Encrypted Edge Replicas</h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+            Zero-knowledge payload validation. Edge POPs cache encrypted delta vectors, ensuring only authorized client tokens hold decryption keys.
+          </p>
+<div class="mt-3 font-badge-code text-badge-code text-secondary font-semibold">
+            • AES-256-GCM hardware accelerated
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-fixed-dim mb-3">
+<span class="material-symbols-outlined text-2xl">electric_bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Zero-Config Turbopack & Vite</h3>
+<p class="font-body-base text-body-base text-on-surface-variant leading-relaxed">
+            Drop-in client SDK with first-class Next.js 16 App Router streaming, automatic reconnect backoff, and full offline optimistic updates.
+          </p>
+<div class="mt-3 font-badge-code text-badge-code text-secondary font-semibold">
+            • 3.2kb gzip tree-shaken footprint
+          </div>
+</div>
+<!-- Technical Telemetry Widget -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest">
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">Runtime Telemetry</span>
+<div class="grid grid-cols-2 gap-3 mt-3">
+<div class="p-2.5 rounded bg-surface-container-low">
+<div class="font-badge-code text-[11px] text-on-surface-variant">ACTIVE PEERS</div>
+<div class="font-metric-mono text-metric-mono text-primary font-bold">14,280</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low">
+<div class="font-badge-code text-[11px] text-on-surface-variant">MSG / SEC</div>
+<div class="font-metric-mono text-metric-mono text-primary font-bold">428,910</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low">
+<div class="font-badge-code text-[11px] text-on-surface-variant">PACKET LOSS</div>
+<div class="font-metric-mono text-metric-mono text-secondary font-bold">0.0001%</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low">
+<div class="font-badge-code text-[11px] text-on-surface-variant">UPTIME SLA</div>
+<div class="font-metric-mono text-metric-mono text-primary font-bold">99.999%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Hub & Next Day Teaser -->
+<section class="max-w-7xl mx-auto px-margin-sm md:px-margin pb-space-xl w-full">
+<div class="flex flex-col gap-space-lg">
+<!-- Primary Action Banner -->
+<div class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-low shadow-2xl flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-2 max-w-xl">
+<span class="font-badge-code text-badge-code text-primary-fixed-dim font-bold">READY FOR INTEGRATION</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Start synchronizing in less than 3 minutes</h3>
+<p class="font-body-base text-body-base text-on-surface-variant">
+            Universal Data Mesh is available in public beta for all Launch Week participants. Deploy right now from the CLI or inspect the live sample sandbox.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<a class="px-space-md py-3 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-bold text-center transition-all shadow-[0_0_16px_rgba(200,243,44,0.2)]" href="#">
+            Try in Sandbox
+          </a>
+<a class="px-space-md py-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-base text-body-base font-semibold text-center transition-all" href="#">
+            Read Documentation
+          </a>
+<a class="px-space-md py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-base text-body-base text-center transition-all flex items-center justify-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GitHub</span>
+</a>
+</div>
+</div>
+<!-- Next Day Teaser Ribbon Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">lock_clock</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase font-bold">UP NEXT TOMORROW</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-badge-code text-[10px] text-primary-fixed-dim">DAY 04</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">
+              Distributed Object Storage & Edge Blob Caching
+            </div>
+</div>
+</div>
+<!-- Live Countdown Widget to Next Day -->
+<div class="flex items-center gap-space-sm self-end md:self-auto bg-surface-container-low px-space-md py-2 rounded-lg">
+<span class="font-badge-code text-badge-code text-on-surface-variant">UNLOCKS IN</span>
+<span class="font-metric-mono text-metric-mono font-bold text-primary-fixed-dim tracking-wider" id="nextDayTimer">18:24:11</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic Microscript -->
+<script>
+    // Tab Switching Micro-interaction
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const demoTab = document.getElementById('tabContentDemo');
+    const benchTab = document.getElementById('tabContentBenchmark');
+    const streamTab = document.getElementById('tabContentStream');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'text-primary-fixed-dim');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-high', 'text-primary-fixed-dim');
+        btn.classList.remove('text-on-surface-variant');
+
+        const mode = btn.getAttribute('data-tab');
+        if (mode === 'demo') {
+          demoTab.classList.remove('hidden');
+          benchTab.classList.add('hidden');
+          streamTab.classList.add('hidden');
+        } else if (mode === 'benchmark') {
+          demoTab.classList.add('hidden');
+          benchTab.classList.remove('hidden');
+          streamTab.classList.add('hidden');
+        } else {
+          demoTab.classList.add('hidden');
+          benchTab.classList.add('hidden');
+          streamTab.classList.remove('hidden');
+        }
+      });
+    });
+
+    // Simulated Global Write Trigger
+    const pulseBtn = document.getElementById('dispatchPulseBtn');
+    const pulseStatus = document.getElementById('pulseStatus');
+    const driftCounter = document.getElementById('driftCounter');
+    const meshBar = document.getElementById('meshBar');
+
+    if (pulseBtn) {
+      pulseBtn.addEventListener('click', () => {
+        pulseStatus.textContent = 'Syncing: Broadcasting 48 edge delta packets...';
+        pulseStatus.classList.add('text-primary-fixed-dim');
+        meshBar.style.width = '14%';
+        driftCounter.textContent = '0.009 ms';
+
+        setTimeout(() => {
+          pulseStatus.textContent = 'Status: Synchronized! All regions converged.';
+          meshBar.style.width = '8%';
+          driftCounter.textContent = '0.012 ms';
+        }, 600);
+      });
+    }
+
+    const resetBtn = document.getElementById('resetDemoBtn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        pulseStatus.textContent = 'Status: Idle (Syncing)';
+        pulseStatus.classList.remove('text-primary-fixed-dim');
+        driftCounter.textContent = '0.012 ms';
+      });
+    }
+
+    // Code copy feedback
+    const copyCode = document.getElementById('copyCodeBtn');
+    if (copyCode) {
+      copyCode.addEventListener('click', () => {
+        const originalText = copyCode.innerHTML;
+        copyCode.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span><span>COPIED!</span>`;
+        setTimeout(() => {
+          copyCode.innerHTML = originalText;
+        }, 1800);
+      });
+    }
+
+    // Dynamic Countdown Micro-Timer Simulation
+    let totalSeconds = 18 * 3600 + 24 * 60 + 11;
+    const timerElem = document.getElementById('nextDayTimer');
+    if (timerElem) {
+      setInterval(() => {
+        if (totalSeconds > 0) {
+          totalSeconds--;
+          const hrs = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+          const mins = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+          const secs = String(totalSeconds % 60).padStart(2, '0');
+          timerElem.textContent = `${hrs}:${mins}:${secs}`;
+        }
+      }, 1000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest/80 mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Countdown Engine Inc. All rights reserved.</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container font-badge-code text-badge-code text-on-surface-variant"><span class="material-symbols-outlined text-[13px] text-secondary">terminal</span><span>Built with Next.js 16 & Motion</span></div></div><div class="flex items-center flex-wrap justify-center gap-space-lg"><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Docs</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Discord</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">X (@countdown)</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">RSS Feed</a></div></div></footer></body></html>

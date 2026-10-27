@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tech-matrix-grid{background-image:radial-gradient(rgba(244,244,245,0.06) 1px,transparent 1px);background-size:24px 24px;}.noise-overlay{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","secondary-fixed-dim":"#3cddc7","error":"#ffb4ab","outline":"#8f937a","on-error-container":"#ffdad6","surface-container-lowest":"#0e0e10","surface-container-highest":"#353437","surface-container":"#201f22","on-surface":"#e5e1e4","on-primary-fixed-variant":"#3d4d00","surface-dim":"#131315","secondary":"#44e2cd","on-secondary-fixed":"#00201c","outline-variant":"#444934","on-tertiary-fixed-variant":"#6900b3","primary-fixed-dim":"#aed500","on-secondary-container":"#004d44","surface-variant":"#353437","secondary-fixed":"#62fae3","on-background":"#e5e1e4","surface-bright":"#39393b","on-tertiary-container":"#8a33d9","tertiary-fixed":"#f0dbff","on-tertiary":"#490080","surface-tint":"#aed500","surface-container-low":"#1c1b1d","surface-container-high":"#2a2a2c","inverse-on-surface":"#313032","tertiary-container":"#f0dbff","on-primary-container":"#576c00","primary-container":"#c8f32c","on-tertiary-fixed":"#2c0051","on-surface-variant":"#c5c9ae","tertiary-fixed-dim":"#ddb7ff","on-error":"#690005","on-primary":"#293500","inverse-surface":"#e5e1e4","inverse-primary":"#526600","on-secondary":"#003731","primary-fixed":"#c8f32c","surface":"#131315","secondary-container":"#03c6b2","error-container":"#93000a","on-secondary-fixed-variant":"#005047","primary":"#ffffff","on-primary-fixed":"#171e00","background":"#131315"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","margin":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem"},fontFamily:{"timer-display-mobile":["Space Mono"],"metric-mono":["Space Mono"],"headline-md":["Geist"],"headline-lg":["Geist"],"timer-display":["Space Mono"],"display-hero":["Geist"],"headline-lg-mobile":["Geist"],"body-lg":["Geist"],"body-sm":["Geist"],"badge-code":["Space Mono"],"display-hero-mobile":["Geist"],"body-base":["Geist"],"headline-sm":["Geist"]},fontSize:{"timer-display-mobile":["36px",{"lineHeight":"40px","letterSpacing":"-0.03em","fontWeight":"700"}],"metric-mono":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"timer-display":["64px",{"lineHeight":"68px","letterSpacing":"-0.05em","fontWeight":"700"}],"display-hero":["72px",{"lineHeight":"76px","letterSpacing":"-0.04em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"badge-code":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"400"}],"display-hero-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-base":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface tech-matrix-grid min-h-screen relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-50 noise-overlay"></div><header class="fixed top-0 left-0 w-full z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Countdown Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoVlPbXc_lo6XR747aPX28ZQzb0EfDBBNdaTzGB8Yn1J45qWCKJenwbbOLfUBdFI0ervQt3xZd-0LCAPEC1_8uWgj6bYOs6m8B1NUeonu_ar4Wt2LRnESRYGxOcdybrbNwh0Ug6LBBI6rHnT_PC1DvI0sv5dtKjnCkalJRol7StkZUBUFdBCAQX7sIJDLtx0XA3KvgRakJSiBRyHGROlGfpf02ioatPrnTpYL2X30n"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">COUNTDOWN</span><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container/10 border border-primary-container/30"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-badge-code text-badge-code font-bold uppercase text-primary-fixed-dim">LAUNCH WEEK 01</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 bg-surface-container-low/70 rounded-lg" data-active-classes="bg-surface-container-high text-on-surface rounded-lg"><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="overview-timeline" href="#">Timeline</a><a aria-current="page" class="px-space-md py-1.5 font-body-base transition-colors bg-surface-container-high text-on-surface rounded-lg" data-path="launch-ticket" href="#">Ticket</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="day-reveal" href="#">Day 03</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface font-body-base text-body-base transition-colors" data-path="leaderboard" href="#">Leaderboard</a></nav><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-low border border-surface-container-highest"><span class="font-metric-mono text-metric-mono text-on-surface-variant">STARTS IN</span><span class="font-metric-mono text-metric-mono text-primary-fixed-dim tracking-wider font-bold">02D 14H 32M</span></div><a class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface font-metric-mono text-metric-mono transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">star</span><span class="font-bold">4.2k</span></a><button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-body-base text-body-base font-semibold shadow-[0_0_12px_rgba(200,243,44,0.2)] transition-all active:scale-95">Claim Ticket</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-sm md:px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Top Bar Navigation & Variant Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low/80 backdrop-blur-xl p-space-md rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-badge-code text-badge-code text-on-surface-variant uppercase tracking-wider">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">arrow_back</span> Timeline
+          </a>
+<span>/</span>
+<span class="text-primary-fixed-dim">Pass Verification</span>
+<span>/</span>
+<span class="text-on-surface">@alexrivera</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight uppercase">
+            Official Access Pass
+          </h1>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/10 text-primary-fixed-dim font-badge-code text-badge-code font-bold">
+            CONFIRMED
+          </span>
+</div>
+</div>
+<!-- Ticket Customizer & Export Tools -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Variant Switcher -->
+<div class="flex items-center p-1 bg-surface-container rounded-lg">
+<button class="px-space-md py-1.5 rounded text-on-surface bg-surface-container-high font-metric-mono text-metric-mono font-medium transition-all shadow-sm flex items-center gap-1.5" id="btn-standard-edition">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Standard #000123
+          </button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-metric-mono text-metric-mono font-medium transition-all flex items-center gap-1.5" id="btn-gold-edition">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+            Gold Foil #000100
+          </button>
+</div>
+<!-- Foil Intensity Level Toggle -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-base text-body-base transition-colors flex items-center gap-1.5" id="btn-foil-intensity" title="Toggle Sheen Intensity">
+<span class="material-symbols-outlined text-[18px] text-secondary">auto_awesome</span>
+<span class="hidden sm:inline font-metric-mono text-badge-code font-bold uppercase">Foil FX</span>
+</button>
+<!-- Quick Download Menu Button -->
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary/90 text-surface font-body-base text-body-base font-semibold transition-all shadow-[0_0_16px_rgba(255,255,255,0.15)] flex items-center gap-1.5" id="btn-download-quick">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Save Pass</span>
+</button>
+</div>
+</div>
+<!-- Gold Variant Lucky Banner Notification -->
+<div class="hidden transition-all duration-300" id="gold-banner-alert">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high p-space-md shadow-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md z-10">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="font-metric-mono text-metric-mono text-secondary-fixed font-bold tracking-wide">
+              LUCKY TICKET #000100 UNLOCKED
+            </div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Divisible by 100 ticket milestones grant VIP backstage livestream rooms & the rare physical gold-foil badge.
+            </p>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-secondary-fixed font-metric-mono text-badge-code uppercase font-bold hover:bg-surface-container-highest transition-colors" id="revert-standard-link">
+          Reset to Standard
+        </button>
+</div>
+</div>
+<!-- 3D Interactive Ticket Stage Section -->
+<div class="w-full flex flex-col items-center justify-center py-space-md">
+<!-- Perspective Scene Container -->
+<div class="w-full max-w-[860px] perspective-[1200px] select-none py-space-sm" id="ticket-perspective-wrap">
+<!-- The Ticket Card Object -->
+<div class="relative w-full rounded-2xl bg-surface-container-low transition-transform duration-100 ease-out will-change-transform shadow-[0_24px_64px_rgba(0,0,0,0.6)] overflow-hidden" id="ticket-card">
+<!-- Holographic Shimmer / Dynamic Reflection Layer -->
+<div class="pointer-events-none absolute inset-0 z-30 opacity-40 mix-blend-color-dodge transition-opacity duration-300 rounded-2xl" id="ticket-holo-overlay" style="background: radial-gradient(circle 380px at 50% 50%, rgba(212,255,58,0.5), rgba(68,226,205,0.3) 40%, rgba(240,219,255,0.2) 70%, transparent 100%);">
+</div>
+<!-- Subtle Hardware Specular Line -->
+<div class="pointer-events-none absolute inset-0 z-20 opacity-20 mix-blend-screen bg-gradient-to-tr from-transparent via-primary to-transparent" id="specular-line"></div>
+<!-- Ticket Inner Shell Layout -->
+<div class="relative z-10 flex flex-col md:flex-row w-full bg-surface-container-lowest/90 backdrop-blur-md">
+<!-- MAIN BODY (LEFT 70%) -->
+<div class="relative flex-1 p-space-md md:p-space-xl flex flex-col justify-between min-h-[380px] gap-space-lg">
+<!-- Subtle Background Security Watermark -->
+<div class="absolute right-6 top-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none font-display-hero text-display-hero uppercase tracking-tighter text-on-surface">
+                COUNTDOWN
+              </div>
+<!-- Top Section: Brand + Category Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center shadow-inner">
+<img alt="Logo" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoVlPbXc_lo6XR747aPX28ZQzb0EfDBBNdaTzGB8Yn1J45qWCKJenwbbOLfUBdFI0ervQt3xZd-0LCAPEC1_8uWgj6bYOs6m8B1NUeonu_ar4Wt2LRnESRYGxOcdybrbNwh0Ug6LBBI6rHnT_PC1DvI0sv5dtKjnCkalJRol7StkZUBUFdBCAQX7sIJDLtx0XA3KvgRakJSiBRyHGROlGfpf02ioatPrnTpYL2X30n"/>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight uppercase leading-none">
+                      Countdown
+                    </div>
+<div class="font-badge-code text-badge-code text-on-surface-variant uppercase tracking-widest mt-1">
+                      Launch Week 01 Pass
+                    </div>
+</div>
+</div>
+<!-- Event Access Tier Chip -->
+<div class="px-space-md py-1 rounded bg-surface-container-high text-on-surface font-badge-code text-badge-code font-bold tracking-wider uppercase shadow-sm" id="badge-access-tier">
+                  All-Access • Tier 01
+                </div>
+</div>
+<!-- Mid Section: Attendee Information -->
+<div class="flex items-center gap-space-md my-auto">
+<div class="relative">
+<img class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-md" data-alt="High-resolution monochrome portrait photo of a senior software engineer Alex Rivera wearing dark technical streetwear against a subtle nocturnal studio backdrop with rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA2cg35wwC0S8d8L0zNRxS2hp1ydd7mli_N96SU8pcAoTapjZ0v8rSFZ2-jKnru74rxd0v6srfjZN81LHhJ8ty3ZzJS6yputBtMsNGCkJjSHOgoQ18OpldZo6MXQyWjg3Yl6d99KN1aCRYcQWk7gdkR4j-3K4RUTwKJxFLBApWhKjhxgCbxFB7obJegE5RA3HXgNw5Z8kXtuFqvPjSX9d1MhpEqh3LUtAxlOxSceE"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping absolute"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container relative"></span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-headline-md font-bold text-on-surface truncate">Alex Rivera</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-badge-code text-badge-code uppercase">Core</span>
+</div>
+<div class="font-metric-mono text-metric-mono text-on-surface-variant">@alexrivera</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant/80 mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span> GitHub Verified • Registered Oct 14
+                  </div>
+</div>
+</div>
+<!-- Bottom Section: Monospace Ticket Number & Technical Metadata -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md pt-space-md bg-surface-container-lowest/50 rounded-lg p-space-sm">
+<div>
+<div class="font-badge-code text-badge-code text-on-surface-variant uppercase tracking-wider">Pass Serial Number</div>
+<div class="font-timer-display text-headline-lg md:text-timer-display font-bold text-primary-fixed-dim tracking-tighter leading-none mt-1" id="main-ticket-num">
+                    #000123
+                  </div>
+</div>
+<div class="flex flex-col sm:items-end text-left sm:text-right font-badge-code text-badge-code text-on-surface-variant">
+<div class="text-on-surface font-semibold">OCTOBER 21–25, 2025</div>
+<div>GLOBAL BROADCAST • PACIFIC TIME</div>
+<div class="text-on-surface-variant/60 font-metric-mono mt-1 text-[10px] tracking-wider">
+                    SIG: 0x7F48...89B1A990D4
+                  </div>
+</div>
+</div>
+</div>
+<!-- PERFORATED TEAR-OFF LINE & NOTCH DIVIDER -->
+<div class="relative flex md:flex-col items-center justify-between w-full md:w-0 shrink-0">
+<!-- Top Cutout Notch -->
+<div class="absolute -top-3 left-1/2 md:left-auto md:-top-3 md:-translate-x-1/2 w-6 h-6 rounded-full bg-surface z-20 shadow-inner"></div>
+<!-- Dotted Divider Line (Horizontal on mobile, vertical on desktop) -->
+<div class="w-full h-0 md:w-0 md:h-full border-t-2 md:border-t-0 md:border-l-2 border-dashed border-surface-container-highest my-space-sm md:my-0 md:mx-0 opacity-40"></div>
+<!-- Bottom Cutout Notch -->
+<div class="absolute -bottom-3 left-1/2 md:left-auto md:-bottom-3 md:-translate-x-1/2 w-6 h-6 rounded-full bg-surface z-20 shadow-inner"></div>
+</div>
+<!-- TICKET STUB (RIGHT 30%) -->
+<div class="w-full md:w-72 bg-surface-container-low/70 p-space-md md:p-space-lg flex flex-col justify-between gap-space-md">
+<!-- Stub Top Metadata -->
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase tracking-widest font-semibold">STUB RECORD</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<!-- QR Code & Fast-Checkin Block -->
+<div class="flex flex-col items-center justify-center p-space-md bg-surface-container-lowest rounded-xl shadow-inner gap-space-sm">
+<!-- High-contrast SVG QR Code Matrix Graphic -->
+<svg class="w-32 h-32 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Finder Top Left -->
+<path d="M10,10 h24 v24 h-24 z M14,14 v16 h16 v-16 z M18,18 h8 v8 h-8 z"></path>
+<!-- QR Finder Top Right -->
+<path d="M66,10 h24 v24 h-24 z M70,14 v16 h16 v-16 z M74,18 h8 v8 h-8 z"></path>
+<!-- QR Finder Bottom Left -->
+<path d="M10,66 h24 v24 h-24 z M14,70 v16 h16 v-16 z M18,74 h8 v8 h-8 z"></path>
+<!-- Random Tech Data Pixels -->
+<rect height="6" width="6" x="42" y="12"></rect>
+<rect height="6" width="6" x="52" y="16"></rect>
+<rect height="6" width="6" x="44" y="26"></rect>
+<rect height="6" width="6" x="12" y="44"></rect>
+<rect height="6" width="8" x="22" y="40"></rect>
+<rect height="8" width="6" x="16" y="52"></rect>
+<rect height="8" width="8" x="40" y="40"></rect>
+<rect height="6" width="6" x="52" y="48"></rect>
+<rect height="6" width="8" x="44" y="60"></rect>
+<rect height="6" width="6" x="68" y="44"></rect>
+<rect height="8" width="6" x="80" y="40"></rect>
+<rect height="6" width="8" x="74" y="56"></rect>
+<rect height="8" width="6" x="64" y="68"></rect>
+<rect height="6" width="6" x="76" y="72"></rect>
+<rect height="6" width="8" x="44" y="78"></rect>
+<rect height="8" width="6" x="56" y="82"></rect>
+<rect height="6" width="8" x="82" y="84"></rect>
+</svg>
+<span class="font-badge-code text-badge-code text-on-surface-variant font-mono">SCAN TO FAST-CLAIM</span>
+</div>
+<!-- Stub Bottom Barcode & Serial Mirror -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-metric-mono text-metric-mono font-bold text-on-surface">
+<span>SERIAL</span>
+<span class="text-primary-fixed-dim" id="stub-ticket-num">#000123</span>
+</div>
+<!-- Simulated Tear-Off Barcode Graphic -->
+<div class="h-10 w-full flex items-center justify-between gap-[2px] opacity-80 overflow-hidden bg-surface-container-lowest p-1 rounded">
+<div class="h-full w-1 bg-on-surface"></div>
+<div class="h-full w-2 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-1.5 bg-on-surface"></div>
+<div class="h-full w-1 bg-on-surface"></div>
+<div class="h-full w-3 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-2 bg-on-surface"></div>
+<div class="h-full w-1.5 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-2.5 bg-on-surface"></div>
+<div class="h-full w-1 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-2 bg-on-surface"></div>
+<div class="h-full w-1.5 bg-on-surface"></div>
+<div class="h-full w-1 bg-on-surface"></div>
+<div class="h-full w-3 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-2 bg-on-surface"></div>
+<div class="h-full w-1.5 bg-on-surface"></div>
+<div class="h-full w-0.5 bg-on-surface"></div>
+<div class="h-full w-2.5 bg-on-surface"></div>
+<div class="h-full w-1 bg-on-surface"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-badge-code text-on-surface-variant tracking-wider uppercase">
+<span>DEV TIER 1</span>
+<span>SAN FRANCISCO // LIVESTREAM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tilt Guide micro-caption -->
+<div class="flex items-center gap-space-xs mt-space-md text-on-surface-variant font-badge-code text-badge-code uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">screen_rotation</span>
+<span>Move pointer or touch to tilt pass & inspect holographic security foil</span>
+</div>
+</div>
+<!-- Referral Stats & Direct Actions Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg">
+<!-- Referral Momentum Card (7 cols) -->
+<div class="md:col-span-7 bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code text-primary-fixed-dim uppercase tracking-wider font-bold">
+              REFERRAL INCENTIVE PROGRAM
+            </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-metric-mono text-badge-code text-secondary font-bold">
+              RANK #42 GLOBAL
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">
+            Invite colleagues, unlock higher priority swag boxes.
+          </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+            Each engineer who claims a ticket through your unique link advances your spot in the hardware giveaway raffle.
+          </p>
+</div>
+<!-- Referral Metric Counter Strip -->
+<div class="grid grid-cols-3 gap-space-sm bg-surface-container-lowest p-space-md rounded-xl">
+<div>
+<div class="font-badge-code text-badge-code text-on-surface-variant uppercase">Invited</div>
+<div class="font-metric-mono text-headline-md font-bold text-on-surface mt-1">14</div>
+<div class="font-body-sm text-body-sm text-secondary font-medium">+3 this hour</div>
+</div>
+<div>
+<div class="font-badge-code text-badge-code text-on-surface-variant uppercase">Next Reward</div>
+<div class="font-metric-mono text-headline-md font-bold text-primary-fixed-dim mt-1">6 more</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Swag Pack 02</div>
+</div>
+<div>
+<div class="font-badge-code text-badge-code text-on-surface-variant uppercase">Raffle Weight</div>
+<div class="font-metric-mono text-headline-md font-bold text-on-surface mt-1">14x</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Keynote Access</div>
+</div>
+</div>
+<!-- Share Actions Row -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm">
+<div class="relative flex-1 w-full">
+<input class="w-full bg-surface-container-lowest text-on-surface font-metric-mono text-body-sm px-space-md py-2.5 rounded-lg pr-24 focus:outline-none select-all" id="ref-link-input" readonly="" type="text" value="https://countdown.dev/t/alexrivera"/>
+<button class="absolute right-1 top-1 bottom-1 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-badge-code text-badge-code uppercase font-bold transition-all flex items-center gap-1" id="btn-copy-link">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-base text-body-base font-semibold transition-all flex items-center justify-center gap-2 shadow-sm" id="btn-share-x">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+<span>Post to X</span>
+</button>
+</div>
+</div>
+<!-- Direct Export & Platform Wallets Bento Card (5 cols) -->
+<div class="md:col-span-5 bg-surface-container-low p-space-lg rounded-2xl flex flex-col justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-badge-code text-badge-code text-secondary uppercase tracking-wider font-bold">
+            DEVICE PASSHOLDERS
+          </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">
+            Download or add to mobile passbook.
+          </h2>
+<p class="font-body-base text-body-base text-on-surface-variant">
+            Export vector SVG for digital badges or save directly to Apple Wallet for livestream check-in notifications.
+          </p>
+</div>
+<!-- Action Buttons Vertical Stack -->
+<div class="flex flex-col gap-space-sm">
+<button class="w-full p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all flex items-center justify-between group shadow-sm" id="btn-save-apple">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">wallet</span>
+</div>
+<div class="text-left">
+<div class="font-body-base text-body-base text-on-surface font-semibold group-hover:text-primary transition-colors">Add to Apple Wallet</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Real-time calendar & reminder sync</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="w-full p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all flex items-center justify-between group shadow-sm" id="btn-download-svg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+</div>
+<div class="text-left">
+<div class="font-body-base text-body-base text-on-surface font-semibold group-hover:text-primary transition-colors">Export High-Res PNG</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">1200x630 Social Open Graph format</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">download</span>
+</button>
+</div>
+<!-- Multi-Platform Share Tray -->
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant">
+<span class="font-badge-code text-badge-code uppercase">Also share on:</span>
+<div class="flex items-center gap-space-sm">
+<!-- Bluesky Button -->
+<button class="p-2 rounded-lg bg-surface-container hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btn-share-bsky" title="Share to Bluesky">
+<span class="material-symbols-outlined text-[18px]">cloud</span>
+</button>
+<!-- LinkedIn Button -->
+<button class="p-2 rounded-lg bg-surface-container hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btn-share-linkedin" title="Share to LinkedIn">
+<span class="material-symbols-outlined text-[18px]">work</span>
+</button>
+<!-- Raw QR Overlay Trigger -->
+<button class="p-2 rounded-lg bg-surface-container hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btn-show-qr-modal" title="View Fullscreen Pass">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Toast Feedback Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-message">
+<div class="px-space-md py-space-sm rounded-lg bg-surface-container-highest text-on-surface shadow-2xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">check_circle</span>
+<span class="font-body-base text-body-base font-medium" id="toast-text">Link copied to clipboard</span>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for 3D Tilt, Variant Switcher, and Social Links -->
+<script>
+    (function () {
+      const cardWrap = document.getElementById('ticket-perspective-wrap');
+      const ticketCard = document.getElementById('ticket-card');
+      const holoOverlay = document.getElementById('ticket-holo-overlay');
+      const specularLine = document.getElementById('specular-line');
+      
+      const btnStandard = document.getElementById('btn-standard-edition');
+      const btnGold = document.getElementById('btn-gold-edition');
+      const btnFoilIntensity = document.getElementById('btn-foil-intensity');
+      const goldBanner = document.getElementById('gold-banner-alert');
+      const revertLink = document.getElementById('revert-standard-link');
+      
+      const mainNum = document.getElementById('main-ticket-num');
+      const stubNum = document.getElementById('stub-ticket-num');
+      const badgeTier = document.getElementById('badge-access-tier');
+      
+      const btnCopyLink = document.getElementById('btn-copy-link');
+      const refLinkInput = document.getElementById('ref-link-input');
+      const toast = document.getElementById('toast-message');
+      const toastText = document.getElementById('toast-text');
+
+      let isGoldMode = false;
+      let foilHighIntensity = false;
+
+      // 3D Card Gyro / Pointer Tilt Simulation
+      function handleMove(e) {
+        const rect = ticketCard.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+        const x = clientX - rect.left;
+        const y = clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -9; // Max 9 deg
+        const rotateY = ((x - centerX) / centerX) * 9;
+
+        ticketCard.style.transform = `rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateZ(10px)`;
+
+        // Foil Light Reflection Position
+        const pctX = ((x / rect.width) * 100).toFixed(1);
+        const pctY = ((y / rect.height) * 100).toFixed(1);
+
+        if (isGoldMode) {
+          holoOverlay.style.background = `radial-gradient(circle 380px at ${pctX}% ${pctY}%, rgba(245,158,11,0.7), rgba(254,240,138,0.4) 35%, rgba(180,83,9,0.2) 70%, transparent 100%)`;
+        } else {
+          holoOverlay.style.background = `radial-gradient(circle 380px at ${pctX}% ${pctY}%, rgba(212,255,58,0.55), rgba(68,226,205,0.4) 35%, rgba(240,219,255,0.25) 70%, transparent 100%)`;
+        }
+      }
+
+      function handleLeave() {
+        ticketCard.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
+        if (isGoldMode) {
+          holoOverlay.style.background = 'radial-gradient(circle 380px at 50% 50%, rgba(245,158,11,0.5), rgba(254,240,138,0.3) 40%, rgba(180,83,9,0.15) 70%, transparent 100%)';
+        } else {
+          holoOverlay.style.background = 'radial-gradient(circle 380px at 50% 50%, rgba(212,255,58,0.4), rgba(68,226,205,0.3) 40%, rgba(240,219,255,0.2) 70%, transparent 100%)';
+        }
+      }
+
+      if (cardWrap && ticketCard) {
+        cardWrap.addEventListener('mousemove', handleMove);
+        cardWrap.addEventListener('mouseleave', handleLeave);
+        cardWrap.addEventListener('touchmove', handleMove, { passive: true });
+        cardWrap.addEventListener('touchend', handleLeave);
+      }
+
+      // Variant Toggles
+      function applyEdition(gold) {
+        isGoldMode = gold;
+        if (isGoldMode) {
+          mainNum.innerText = '#000100';
+          stubNum.innerText = '#000100';
+          mainNum.className = 'font-timer-display text-headline-lg md:text-timer-display font-bold text-secondary-fixed tracking-tighter leading-none mt-1';
+          stubNum.className = 'text-secondary-fixed font-bold';
+          badgeTier.innerText = 'LUCKY GOLD • TIER 00';
+          badgeTier.className = 'px-space-md py-1 rounded bg-secondary-fixed/20 text-secondary-fixed font-badge-code text-badge-code font-bold tracking-wider uppercase shadow-sm';
+          
+          btnGold.classList.add('bg-surface-container-high', 'text-on-surface');
+          btnGold.classList.remove('text-on-surface-variant');
+          btnStandard.classList.remove('bg-surface-container-high', 'text-on-surface');
+          btnStandard.classList.add('text-on-surface-variant');
+          
+          goldBanner.classList.remove('hidden');
+          holoOverlay.style.background = 'radial-gradient(circle 380px at 50% 50%, rgba(245,158,11,0.6), rgba(254,240,138,0.35) 40%, transparent 100%)';
+          showToast('Gold Foil Variant #000100 loaded');
+        } else {
+          mainNum.innerText = '#000123';
+          stubNum.innerText = '#000123';
+          mainNum.className = 'font-timer-display text-headline-lg md:text-timer-display font-bold text-primary-fixed-dim tracking-tighter leading-none mt-1';
+          stubNum.className = 'text-primary-fixed-dim font-bold';
+          badgeTier.innerText = 'All-Access • Tier 01';
+          badgeTier.className = 'px-space-md py-1 rounded bg-surface-container-high text-on-surface font-badge-code text-badge-code font-bold tracking-wider uppercase shadow-sm';
+          
+          btnStandard.classList.add('bg-surface-container-high', 'text-on-surface');
+          btnStandard.classList.remove('text-on-surface-variant');
+          btnGold.classList.remove('bg-surface-container-high', 'text-on-surface');
+          btnGold.classList.add('text-on-surface-variant');
+          
+          goldBanner.classList.add('hidden');
+          holoOverlay.style.background = 'radial-gradient(circle 380px at 50% 50%, rgba(212,255,58,0.4), rgba(68,226,205,0.3) 40%, rgba(240,219,255,0.2) 70%, transparent 100%)';
+          showToast('Standard Pass #000123 restored');
+        }
+      }
+
+      btnGold.addEventListener('click', () => applyEdition(true));
+      btnStandard.addEventListener('click', () => applyEdition(false));
+      revertLink.addEventListener('click', () => applyEdition(false));
+
+      // Foil Intensity Multiplier
+      btnFoilIntensity.addEventListener('click', () => {
+        foilHighIntensity = !foilHighIntensity;
+        if (foilHighIntensity) {
+          holoOverlay.classList.remove('opacity-40');
+          holoOverlay.classList.add('opacity-80');
+          showToast('Foil intensity set to High');
+        } else {
+          holoOverlay.classList.remove('opacity-80');
+          holoOverlay.classList.add('opacity-40');
+          showToast('Foil intensity set to Normal');
+        }
+      });
+
+      // Toast System
+      function showToast(msg) {
+        toastText.innerText = msg;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 2500);
+      }
+
+      // Clipboard Copy
+      btnCopyLink.addEventListener('click', () => {
+        refLinkInput.select();
+        try {
+          navigator.clipboard.writeText(refLinkInput.value);
+          showToast('Ticket URL copied to clipboard');
+        } catch (err) {
+          showToast('URL ready to copy');
+        }
+      });
+
+      // Share to X
+      document.getElementById('btn-share-x').addEventListener('click', () => {
+        const text = encodeURIComponent(`I just claimed my @countdown Launch Week ticket ${isGoldMode ? '#000100' : '#000123'}! Join me:`);
+        const url = encodeURIComponent(refLinkInput.value);
+        window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+      });
+
+      // Social Share Trays
+      document.getElementById('btn-share-bsky').addEventListener('click', () => {
+        const text = encodeURIComponent(`Joined @countdown Launch Week 01 pass! Join here: ${refLinkInput.value}`);
+        window.open(`https://bsky.app/intent/compose?text=${text}`, '_blank');
+      });
+
+      document.getElementById('btn-share-linkedin').addEventListener('click', () => {
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(refLinkInput.value)}`, '_blank');
+      });
+
+      document.getElementById('btn-download-quick').addEventListener('click', () => {
+        showToast('Rendering high-res pass bundle...');
+      });
+
+      document.getElementById('btn-download-svg').addEventListener('click', () => {
+        showToast('Exporting pass PNG (1200x630)...');
+      });
+
+      document.getElementById('btn-save-apple').addEventListener('click', () => {
+        showToast('Generating .pkpass manifest for Apple Wallet...');
+      });
+
+      document.getElementById('btn-show-qr-modal').addEventListener('click', () => {
+        showToast('Showing QR Check-in Code');
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest/80 mt-space-xl"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Countdown Engine Inc. All rights reserved.</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container font-badge-code text-badge-code text-on-surface-variant"><span class="material-symbols-outlined text-[13px] text-secondary">terminal</span><span>Built with Next.js 16 & Motion</span></div></div><div class="flex items-center flex-wrap justify-center gap-space-lg"><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Docs</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">Discord</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">X (@countdown)</a><a class="font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" href="#">RSS Feed</a></div></div></footer></body></html>

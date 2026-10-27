@@ -1,0 +1,11 @@
+.next
+node_modules
+pnpm-lock.yaml
+next-env.d.ts
+playwright-report
+test-results
+*.tsbuildinfo
+.agents
+.codex
+.aws
+stitch_launch_week_countdown_platform
